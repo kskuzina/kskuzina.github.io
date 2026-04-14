@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Материалы — kskuzina</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="blobs" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="blob blob-4"></div>
+  </div>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">kskuzina</a>
+    <div class="nav-links">
+      <a href="about.html">Обо мне</a>
+      <a href="help.html">С чем работаю</a>
+      <a href="how-it-works.html">Как это устроено</a>
+      <a href="education.html">Образование</a>
+      <a href="materials.html" class="active">Материалы</a>
+      <a href="https://t.me/kskuzina" target="_blank" class="btn btn-dark nav-cta">Написать</a>
+    </div>
+    <button class="burger" onclick="toggleMenu()" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="about.html">Обо мне</a>
+    <a href="help.html">С чем работаю</a>
+    <a href="how-it-works.html">Как это устроено</a>
+    <a href="education.html">Образование</a>
+    <a href="materials.html" class="active">Материалы</a>
+    <a href="https://t.me/kskuzina" target="_blank" class="nav-cta">Написать в Telegram</a>
+  </div>
+
+  <main class="page">
+    <div class="container">
+
+      <div class="page-hero">
+        <div class="section-label">Контент</div>
+        <h1>Материалы</h1>
+        <p class="lead" style="margin-top: 16px;">
+          Статьи, видео и другие профессиональные материалы.
+        </p>
+      </div>
+
+      <div class="materials-grid">
+
+        <!-- Articles -->
+        <div class="material-card glass-lg" style="grid-column: 1 / -1;">
+          <div class="badge">Статьи</div>
+          <h3>Публикации</h3>
+          <p class="coming-soon">Раздел в процессе наполнения. Здесь будут появляться статьи о психотерапии, психическом здоровье и смежных темах.</p>
+          <a href="https://t.me/kskuzina" target="_blank" class="btn btn-outline" style="align-self: flex-start; margin-top: 8px;">
+            Подписаться на обновления →
+          </a>
+        </div>
+
+        <!-- YouTube -->
+        <div class="material-card glass-lg">
+          <div class="badge">Видео</div>
+          <h3>Лекции на YouTube</h3>
+          <p style="color: var(--muted); font-size: 0.9rem; line-height: 1.7;">
+            Профессиональные видео для специалистов. Пока вышла одна лекция — о травме.
+          </p>
+          <a href="#" class="btn btn-outline" style="align-self: flex-start; margin-top: 8px;">
+            YouTube →
+          </a>
+        </div>
+
+        <!-- Instagram nature -->
+        <div class="material-card glass-lg">
+          <div class="badge">Instagram</div>
+          <h3>Профессиональный Instagram</h3>
+          <p style="color: var(--muted); font-size: 0.9rem; line-height: 1.7;">
+            Второй аккаунт — о природе и наблюдении за миром. Профессиональный и более специализированный.
+          </p>
+          <a href="#" class="btn btn-outline" style="align-self: flex-start; margin-top: 8px;">
+            Перейти →
+          </a>
+        </div>
+
+        <!-- Useful resources link -->
+        <div class="material-card glass-lg" style="grid-column: 1 / -1;">
+          <div class="badge">Ресурсы</div>
+          <h3>Полезные ресурсы для клиентов и коллег</h3>
+          <p style="color: var(--muted); font-size: 0.9rem; line-height: 1.7;">
+            Подборка ссылок: доказательная медицина, центры помощи, списки специалистов,
+            проекты по психологической поддержке.
+          </p>
+          <a href="resources.html" class="btn btn-outline" style="align-self: flex-start; margin-top: 8px;">
+            Смотреть ресурсы →
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-brand-name">kskuzina</div>
+        <p>Научно-обоснованная психотерапия онлайн</p>
+      </div>
+      <div class="footer-links">
+        <a href="about.html">Обо мне</a>
+        <a href="help.html">С чем работаю</a>
+        <a href="how-it-works.html">Как это устроено</a>
+        <a href="education.html">Образование</a>
+        <a href="materials.html">Материалы</a>
+      </div>
+      <div class="footer-links">
+        <a href="consent.html">Информированное согласие</a>
+        <a href="ethics.html">Этический кодекс</a>
+        <a href="resources.html">Полезные ресурсы</a>
+        <a href="https://t.me/kskuzina" target="_blank">Telegram</a>
+        <a href="https://www.instagram.com/kskuzina/" target="_blank">Instagram</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2025 Ксения Кузина</div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('mobileMenu').classList.toggle('open');
+    }
+    document.addEventListener('click', function(e) {
+      const menu = document.getElementById('mobileMenu');
+      const burger = document.querySelector('.burger');
+      if (!menu.contains(e.target) && !burger.contains(e.target)) {
+        menu.classList.remove('open');
+      }
+    });
+  </script>
+</body>
+</html>

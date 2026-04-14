@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>kskuzina — научно-обоснованная психотерапия</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Gradient blobs -->
+  <div class="blobs" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="blob blob-4"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">kskuzina</a>
+    <div class="nav-links">
+      <a href="about.html">Обо мне</a>
+      <a href="help.html">С чем работаю</a>
+      <a href="how-it-works.html">Как это устроено</a>
+      <a href="education.html">Образование</a>
+      <a href="materials.html">Материалы</a>
+      <a href="https://t.me/kskuzina" target="_blank" class="btn btn-dark nav-cta">Написать</a>
+    </div>
+    <button class="burger" onclick="toggleMenu()" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="about.html">Обо мне</a>
+    <a href="help.html">С чем работаю</a>
+    <a href="how-it-works.html">Как это устроено</a>
+    <a href="education.html">Образование</a>
+    <a href="materials.html">Материалы</a>
+    <a href="https://t.me/kskuzina" target="_blank" class="nav-cta">Написать в Telegram</a>
+  </div>
+
+  <main class="page">
+
+    <!-- Hero -->
+    <section class="section container">
+      <div class="hero">
+        <div class="hero-text">
+          <div class="section-label">Онлайн-психотерапия</div>
+          <h1>Научно-обоснованная психотерапия</h1>
+          <p class="tagline">
+            Опираюсь на научное знание, следую ценностям гуманизма,
+            руководствуюсь здравым смыслом. Бережно помогаю людям
+            справляться с болью и реализовывать важное.
+          </p>
+          <div class="hero-actions">
+            <a href="https://t.me/kskuzina" target="_blank" class="btn btn-dark">Написать в Telegram</a>
+            <a href="how-it-works.html" class="btn btn-outline">Как начать</a>
+          </div>
+        </div>
+        <div class="hero-photo-wrap">
+          <div class="hero-photo-glow"></div>
+          <img src="images/DSC09523.jpg" alt="Ксюша Кузина, психолог" class="hero-photo">
+        </div>
+      </div>
+    </section>
+
+    <!-- About brief -->
+    <section class="section-sm container">
+      <div class="glass-lg" style="padding: 40px 48px;">
+        <div class="section-label">Психолог</div>
+        <h2 style="margin-bottom: 16px;">Меня зовут Ксюша Кузина</h2>
+        <p class="lead" style="margin-bottom: 24px;">
+          Дипломированный клинический психолог, практикую около 6 лет. Живу в Буэнос-Айресе,
+          провожу сессии онлайн для русскоязычных клиентов. Работаю в современных
+          научно-обоснованных подходах психотерапии.
+        </p>
+        <a href="about.html" class="btn btn-outline">Подробнее обо мне →</a>
+      </div>
+    </section>
+
+    <!-- Approaches -->
+    <section class="section-sm container">
+      <div class="section-label">Подходы</div>
+      <h2 style="margin-bottom: 24px;">На что я опираюсь</h2>
+      <div class="approaches">
+        <span class="approach-tag">ACT — Терапия принятия и ответственности</span>
+        <span class="approach-tag">CFT — Терапия, сфокусированная на сострадании</span>
+        <span class="approach-tag">MBCT — Когнитивная терапия на основе осознанности</span>
+        <span class="approach-tag">Схема-терапия</span>
+        <span class="approach-tag">DBT — Диалектико-поведенческая терапия</span>
+        <span class="approach-tag">КПТ</span>
+        <span class="approach-tag">ФАП</span>
+      </div>
+    </section>
+
+    <!-- Steps -->
+    <section class="section container">
+      <div class="section-label">Начало работы</div>
+      <h2 style="margin-bottom: 32px;">Как начать</h2>
+      <div class="steps">
+        <div class="step glass">
+          <div class="step-num">01</div>
+          <h3>Прочитайте информированное согласие</h3>
+          <p>Там подробно описаны условия работы, моя этика и то, чего ожидать от терапии.</p>
+          <a href="consent.html" style="font-size:0.85rem; font-weight:500; margin-top:4px;">Читать →</a>
+        </div>
+        <div class="step glass">
+          <div class="step-num">02</div>
+          <h3>Напишите мне и заполните анкету</h3>
+          <p>Если условия подходят — напишите в Telegram и заполните короткую анкету по ссылке.</p>
+          <a href="https://t.me/kskuzina" target="_blank" style="font-size:0.85rem; font-weight:500; margin-top:4px;">Написать →</a>
+        </div>
+        <div class="step glass">
+          <div class="step-num">03</div>
+          <h3>Договоримся о первой встрече</h3>
+          <p>Если ваш запрос в пределах моих компетенций и есть свободное место — назначим время.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section-sm container">
+      <div class="contacts-block glass-lg">
+        <div>
+          <div class="section-label">Контакты</div>
+          <h2>Готовы начать?</h2>
+        </div>
+        <div class="contact-links">
+          <a href="https://t.me/kskuzina" target="_blank" class="btn btn-dark">Telegram</a>
+          <a href="https://www.instagram.com/kskuzina/" target="_blank" class="btn btn-outline">Instagram</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-brand-name">kskuzina</div>
+        <p>Научно-обоснованная психотерапия онлайн</p>
+      </div>
+      <div class="footer-links">
+        <a href="about.html">Обо мне</a>
+        <a href="help.html">С чем работаю</a>
+        <a href="how-it-works.html">Как это устроено</a>
+        <a href="education.html">Образование</a>
+        <a href="materials.html">Материалы</a>
+      </div>
+      <div class="footer-links">
+        <a href="consent.html">Информированное согласие</a>
+        <a href="ethics.html">Этический кодекс</a>
+        <a href="resources.html">Полезные ресурсы</a>
+        <a href="https://t.me/kskuzina" target="_blank">Telegram</a>
+        <a href="https://www.instagram.com/kskuzina/" target="_blank">Instagram</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2025 Ксения Кузина</div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('mobileMenu').classList.toggle('open');
+    }
+    document.addEventListener('click', function(e) {
+      const menu = document.getElementById('mobileMenu');
+      const burger = document.querySelector('.burger');
+      if (!menu.contains(e.target) && !burger.contains(e.target)) {
+        menu.classList.remove('open');
+      }
+    });
+  </script>
+</body>
+</html>

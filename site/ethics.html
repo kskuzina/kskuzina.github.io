@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Этический кодекс — kskuzina</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="blobs" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="blob blob-4"></div>
+  </div>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">kskuzina</a>
+    <div class="nav-links">
+      <a href="about.html">Обо мне</a>
+      <a href="help.html">С чем работаю</a>
+      <a href="how-it-works.html">Как это устроено</a>
+      <a href="education.html">Образование</a>
+      <a href="materials.html">Материалы</a>
+      <a href="https://t.me/kskuzina" target="_blank" class="btn btn-dark nav-cta">Написать</a>
+    </div>
+    <button class="burger" onclick="toggleMenu()" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="about.html">Обо мне</a>
+    <a href="help.html">С чем работаю</a>
+    <a href="how-it-works.html">Как это устроено</a>
+    <a href="education.html">Образование</a>
+    <a href="materials.html">Материалы</a>
+    <a href="https://t.me/kskuzina" target="_blank" class="nav-cta">Написать в Telegram</a>
+  </div>
+
+  <main class="page">
+    <div class="container" style="max-width: 780px;">
+
+      <div class="page-hero">
+        <div class="section-label">Документ</div>
+        <h1>Этический кодекс</h1>
+        <p class="lead" style="margin-top: 16px;">
+          В своей работе я придерживаюсь Этического кодекса Американской психологической ассоциации (APA).
+          Ниже вы можете скачать оригинал и перевод на русский язык.
+        </p>
+      </div>
+
+      <div class="ethics-cards">
+
+        <div class="ethics-card glass-lg">
+          <div class="ethics-card-info">
+            <h3>Этический кодекс APA</h3>
+            <p>Оригинал на английском языке</p>
+          </div>
+          <a href="files/ethics-original.pdf" target="_blank" class="btn btn-dark">
+            Скачать PDF
+          </a>
+        </div>
+
+        <div class="ethics-card glass-lg">
+          <div class="ethics-card-info">
+            <h3>Этический кодекс APA</h3>
+            <p>Перевод на русский язык (DOCX)</p>
+          </div>
+          <a href="files/ethics-russian.docx" target="_blank" class="btn btn-outline">
+            Скачать DOCX
+          </a>
+        </div>
+
+      </div>
+
+      <div class="glass" style="padding: 28px 32px; margin-top: 24px;">
+        <p style="font-size: 0.9rem; line-height: 1.8; color: var(--muted);">
+          Этический кодекс APA — один из наиболее авторитетных профессиональных стандартов в психологии.
+          Он определяет принципы конфиденциальности, уважения к автономии клиента, профессиональной
+          компетентности и недопустимости злоупотреблений. Я опираюсь на него в своей ежедневной работе.
+        </p>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-brand-name">kskuzina</div>
+        <p>Научно-обоснованная психотерапия онлайн</p>
+      </div>
+      <div class="footer-links">
+        <a href="about.html">Обо мне</a>
+        <a href="help.html">С чем работаю</a>
+        <a href="how-it-works.html">Как это устроено</a>
+        <a href="education.html">Образование</a>
+        <a href="materials.html">Материалы</a>
+      </div>
+      <div class="footer-links">
+        <a href="consent.html">Информированное согласие</a>
+        <a href="ethics.html">Этический кодекс</a>
+        <a href="resources.html">Полезные ресурсы</a>
+        <a href="https://t.me/kskuzina" target="_blank">Telegram</a>
+        <a href="https://www.instagram.com/kskuzina/" target="_blank">Instagram</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2025 Ксения Кузина</div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('mobileMenu').classList.toggle('open');
+    }
+    document.addEventListener('click', function(e) {
+      const menu = document.getElementById('mobileMenu');
+      const burger = document.querySelector('.burger');
+      if (!menu.contains(e.target) && !burger.contains(e.target)) {
+        menu.classList.remove('open');
+      }
+    });
+  </script>
+</body>
+</html>

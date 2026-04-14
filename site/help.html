@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>С чем работаю — kskuzina</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="blobs" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="blob blob-4"></div>
+  </div>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">kskuzina</a>
+    <div class="nav-links">
+      <a href="about.html">Обо мне</a>
+      <a href="help.html" class="active">С чем работаю</a>
+      <a href="how-it-works.html">Как это устроено</a>
+      <a href="education.html">Образование</a>
+      <a href="materials.html">Материалы</a>
+      <a href="https://t.me/kskuzina" target="_blank" class="btn btn-dark nav-cta">Написать</a>
+    </div>
+    <button class="burger" onclick="toggleMenu()" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="about.html">Обо мне</a>
+    <a href="help.html" class="active">С чем работаю</a>
+    <a href="how-it-works.html">Как это устроено</a>
+    <a href="education.html">Образование</a>
+    <a href="materials.html">Материалы</a>
+    <a href="https://t.me/kskuzina" target="_blank" class="nav-cta">Написать в Telegram</a>
+  </div>
+
+  <main class="page">
+    <div class="container">
+
+      <div class="page-hero">
+        <div class="section-label">Запросы</div>
+        <h1>С чем могу помочь</h1>
+        <p class="lead" style="margin-top: 16px;">
+          Запрос на терапию — это важный шаг на пути к изменениям. Это может быть чётко
+          сформулированная проблема или просто ощущение, что в жизни что-то не так.
+          В обоих случаях это основание для работы.
+        </p>
+      </div>
+
+      <!-- Intro card -->
+      <div class="glass-lg" style="padding: 32px 40px; margin-bottom: 32px;">
+        <p style="line-height: 1.8;">
+          Психотерапия — это не только про решение трудностей, но и про исследование себя,
+          своих ценностей и желаний. Это пространство, где можно замедлиться, найти поддержку
+          и научиться по-новому относиться к себе и своему опыту.
+        </p>
+        <p style="margin-top: 14px; line-height: 1.8; color: var(--muted);">
+          Если вашей проблемы нет в списке или вы не можете сформулировать запрос — это нормально.
+          Напишите мне, и мы разберёмся вместе.
+        </p>
+      </div>
+
+      <!-- Issues grid -->
+      <div class="section-label" style="margin-bottom: 16px;">Список запросов</div>
+      <div class="issues-grid">
+        <div class="issue-item glass">тревога, страх, панические атаки</div>
+        <div class="issue-item glass">самоповреждающее и саморазрушительное поведение (кроме химических зависимостей)</div>
+        <div class="issue-item glass">ощущение покинутости и беспомощности</div>
+        <div class="issue-item glass">апатия, грусть, подавленность, отсутствие мотивации и сил</div>
+        <div class="issue-item glass">импульсивность, гнев, стыд</div>
+        <div class="issue-item glass">прокрастинация, сложности с вниманием и сосредоточенностью</div>
+        <div class="issue-item glass">трудности с планированием, самоорганизацией и мотивацией</div>
+        <div class="issue-item glass">перфекционизм и самокритика, сложности с самооценкой</div>
+        <div class="issue-item glass">сложности с телесностью и физическим самоощущением</div>
+        <div class="issue-item glass">проблемы, связанные с хроническими болями и функциональными расстройствами</div>
+        <div class="issue-item glass">вопросы сексуальности, гендерной идентичности</div>
+        <div class="issue-item glass">хронический стресс и эмоциональное выгорание</div>
+        <div class="issue-item glass">проблемы в ситуациях выбора и принятии решений</div>
+        <div class="issue-item glass">трудности в межличностных отношениях, выстраивании и поддержании близких контактов</div>
+        <div class="issue-item glass">вопросы идентичности, самоопределения и самореализации</div>
+        <div class="issue-item glass">проблемы, связанные с вынужденной или запланированной эмиграцией</div>
+        <div class="issue-item glass">травмы и посттравматическое восстановление</div>
+        <div class="issue-item glass">вопросы смысла и ценностей</div>
+        <div class="issue-item glass">сложности, связанные с мыслями о смерти или страхом смерти</div>
+      </div>
+
+      <!-- Can't help -->
+      <div class="cant-help glass-lg" style="margin-top: 32px;">
+        <h3 style="margin-bottom: 16px;">Не смогу помочь</h3>
+        <p style="color: var(--muted); font-size: 0.9rem; margin-bottom: 20px; line-height: 1.7;">
+          Если ваш запрос попадает в этот список, я постараюсь порекомендовать
+          специалиста, который сможет помочь.
+        </p>
+        <div class="cant-list">
+          <span class="tag">Люди младше 18 лет</span>
+          <span class="tag">Пары и семьи</span>
+          <span class="tag">Химические зависимости</span>
+          <span class="tag">Расстройства пищевого поведения</span>
+          <span class="tag">Нарциссическое расстройство личности</span>
+          <span class="tag">Острые психотические состояния</span>
+        </div>
+      </div>
+
+      <!-- Note about diagnosis -->
+      <div class="glass" style="padding: 24px 28px; margin-top: 20px;">
+        <p style="font-size: 0.9rem; line-height: 1.75;">
+          <strong>Если у вас есть психиатрический диагноз</strong> — это ок. Напишите об этом при записи
+          и укажите, наблюдаетесь ли у психиатра и получаете ли медикаментозную поддержку.
+        </p>
+      </div>
+
+      <!-- CTA -->
+      <div class="contacts-block glass-lg" style="margin-top: 48px;">
+        <div>
+          <p class="section-label">Хотите начать?</p>
+          <h2>Напишите мне</h2>
+        </div>
+        <div class="contact-links">
+          <a href="consent.html" class="btn btn-outline">Читать согласие</a>
+          <a href="https://t.me/kskuzina" target="_blank" class="btn btn-dark">Написать в Telegram</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-brand-name">kskuzina</div>
+        <p>Научно-обоснованная психотерапия онлайн</p>
+      </div>
+      <div class="footer-links">
+        <a href="about.html">Обо мне</a>
+        <a href="help.html">С чем работаю</a>
+        <a href="how-it-works.html">Как это устроено</a>
+        <a href="education.html">Образование</a>
+        <a href="materials.html">Материалы</a>
+      </div>
+      <div class="footer-links">
+        <a href="consent.html">Информированное согласие</a>
+        <a href="ethics.html">Этический кодекс</a>
+        <a href="resources.html">Полезные ресурсы</a>
+        <a href="https://t.me/kskuzina" target="_blank">Telegram</a>
+        <a href="https://www.instagram.com/kskuzina/" target="_blank">Instagram</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2025 Ксения Кузина</div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('mobileMenu').classList.toggle('open');
+    }
+    document.addEventListener('click', function(e) {
+      const menu = document.getElementById('mobileMenu');
+      const burger = document.querySelector('.burger');
+      if (!menu.contains(e.target) && !burger.contains(e.target)) {
+        menu.classList.remove('open');
+      }
+    });
+  </script>
+</body>
+</html>
