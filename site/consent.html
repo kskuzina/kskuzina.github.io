@@ -5,6 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Информированное согласие — kskuzina</title>
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    @media print {
+      .blobs, .nav, .mobile-menu, .footer, .btn, .page-hero .section-label { display: none !important; }
+      body { background: #fff !important; color: #000 !important; }
+      .page { padding-top: 0 !important; animation: none !important; }
+      .glass-lg { background: #fff !important; box-shadow: none !important; border: none !important; backdrop-filter: none !important; }
+      .consent-section { break-inside: avoid; }
+      h1 { font-size: 1.6rem !important; margin-bottom: 8px; }
+      h3 { color: #000 !important; }
+      a { color: #000 !important; }
+    }
+  </style>
 </head>
 <body>
   <div class="blobs" aria-hidden="true">
@@ -207,9 +219,9 @@
           <p style="font-size: 0.85rem; color: var(--muted); font-style: italic;">
             Если у вас остались вопросы по выстраиванию процесса терапии или появились вопросы по информированному согласию — задайте их мне. Я буду рада подробно ответить, чтобы весь процесс был максимально прозрачным для вас, а решение о том, начинать ли психотерапию со мной — взвешенным и осознанным.
           </p>
-          <p style="font-size: 0.8rem; color: var(--muted); margin-top: 8px; font-style: italic;">P.S. Если вы заметили грамматические ошибки или смысловые неточности в этом тексте, буду благодарна, если сообщите мне об этом.</p>
-          <div style="margin-top: 20px;">
+          <div style="margin-top: 20px; display: flex; gap: 12px; flex-wrap: wrap;">
             <a href="https://t.me/kskuzina" target="_blank" class="btn btn-dark">Написать в Telegram</a>
+            <button onclick="window.print()" class="btn btn-outline">Сохранить PDF</button>
           </div>
         </div>
 
