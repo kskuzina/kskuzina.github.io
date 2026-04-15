@@ -253,6 +253,11 @@ body::after {
   border: 1px solid var(--card-border);
   border-radius: var(--radius);
   box-shadow: 0 4px 24px rgba(168, 94, 116, 0.13), 0 1px 4px rgba(168, 94, 116, 0.07);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.glass:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 36px rgba(168, 94, 116, 0.20), 0 3px 8px rgba(168, 94, 116, 0.11);
 }
 .glass-lg {
   background: var(--card);
@@ -261,6 +266,11 @@ body::after {
   border: 1px solid var(--card-border);
   border-radius: var(--radius-lg);
   box-shadow: 0 6px 32px rgba(168, 94, 116, 0.14), 0 2px 6px rgba(168, 94, 116, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.glass-lg:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 44px rgba(168, 94, 116, 0.22), 0 4px 10px rgba(168, 94, 116, 0.12);
 }
 
 /* ─── Typography ─── */
