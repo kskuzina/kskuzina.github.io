@@ -59,39 +59,39 @@ body::after {
   overflow: hidden;
 }
 
-/* Relief ridges — light streaks like crests on a surface */
+/* Ridge shadows — dark valleys alongside bright crests */
 .blobs::before {
   content: '';
   position: absolute;
-  width: 750px;
-  height: 48px;
+  width: 660px;
+  height: 40px;
   border-radius: 50%;
-  background: radial-gradient(ellipse at center, rgba(255, 248, 238, 0.90) 0%, transparent 70%);
-  filter: blur(18px);
-  top: 26%;
-  left: -120px;
-  transform: rotate(-22deg);
-  mix-blend-mode: screen;
+  background: radial-gradient(ellipse at center, rgba(40, 18, 10, 0.28) 0%, transparent 70%);
+  filter: blur(14px);
+  top: 15%;
+  right: -10px;
+  transform: rotate(28deg);
 }
 .blobs::after {
   content: '';
   position: absolute;
-  width: 580px;
-  height: 36px;
+  width: 500px;
+  height: 32px;
   border-radius: 50%;
-  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.80) 0%, transparent 70%);
-  filter: blur(14px);
-  bottom: 28%;
-  right: -80px;
-  transform: rotate(14deg);
-  mix-blend-mode: screen;
+  background: radial-gradient(ellipse at center, rgba(40, 18, 10, 0.22) 0%, transparent 70%);
+  filter: blur(11px);
+  top: 65%;
+  left: 3%;
+  transform: rotate(-16deg);
 }
 
 /* Extra ridges via div elements */
-.blob-r1, .blob-r2, .blob-r3 { position: absolute; border-radius: 50%; }
+.blob-r1, .blob-r2, .blob-r3, .blob-r4, .blob-r5 { position: absolute; border-radius: 50%; }
 .blob-r1 { width: 640px; height: 38px; background: radial-gradient(ellipse at center, rgba(255,232,200,0.92) 0%, transparent 70%); filter: blur(16px); top: 12%; right: 0px; transform: rotate(28deg); opacity: 0.85; }
 .blob-r2 { width: 480px; height: 30px; background: radial-gradient(ellipse at center, rgba(255,220,190,0.88) 0%, transparent 70%); filter: blur(12px); top: 62%; left: 5%; transform: rotate(-16deg); opacity: 0.80; }
 .blob-r3 { width: 360px; height: 24px; background: radial-gradient(ellipse at center, rgba(255,238,210,0.90) 0%, transparent 70%); filter: blur(10px); bottom: 10%; left: 30%; transform: rotate(8deg); opacity: 0.80; }
+.blob-r4 { width: 520px; height: 32px; background: radial-gradient(ellipse at center, rgba(255,228,195,0.88) 0%, transparent 70%); filter: blur(13px); top: 38%; left: 15%; transform: rotate(-38deg); opacity: 0.82; }
+.blob-r5 { width: 420px; height: 28px; background: radial-gradient(ellipse at center, rgba(255,235,205,0.86) 0%, transparent 70%); filter: blur(11px); top: 78%; left: -30px; transform: rotate(22deg); opacity: 0.78; }
 
 .blob {
   position: absolute;
