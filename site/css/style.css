@@ -411,6 +411,63 @@ p { line-height: 1.75; font-size: 0.95rem; }
   font-weight: 500;
 }
 
+/* ─── Approach accordion ─── */
+.approaches-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 4px;
+}
+.approach-item {
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.approach-item summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 18px;
+  background: rgba(255,255,255,0.38);
+  border: 1px solid rgba(255,255,255,0.70);
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+  transition: background 0.2s;
+}
+.approach-item summary::-webkit-details-marker { display: none; }
+.approach-item summary::after {
+  content: '+';
+  font-size: 1.1rem;
+  color: var(--muted);
+  flex-shrink: 0;
+  transition: transform 0.25s ease;
+  line-height: 1;
+}
+.approach-item[open] summary {
+  border-radius: var(--radius) var(--radius) 0 0;
+  background: rgba(255,255,255,0.55);
+}
+.approach-item[open] summary::after {
+  transform: rotate(45deg);
+}
+.approach-item summary:hover {
+  background: rgba(255,255,255,0.52);
+}
+.approach-desc {
+  padding: 14px 18px 16px;
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.7;
+  background: rgba(255,255,255,0.22);
+  border: 1px solid rgba(255,255,255,0.70);
+  border-top: none;
+  border-radius: 0 0 var(--radius) var(--radius);
+}
+
 /* ─── Steps ─── */
 .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 .step {
