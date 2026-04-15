@@ -225,10 +225,18 @@ body::after {
 }
 
 /* ─── Page wrapper ─── */
+@keyframes page-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
 .page {
   position: relative;
   z-index: 1;
   padding-top: var(--nav-h);
+  animation: page-in 0.5s ease both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .page { animation: none; }
 }
 
 /* ─── Container ─── */
