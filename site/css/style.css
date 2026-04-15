@@ -2,13 +2,13 @@
 
 /* ─── Variables ─── */
 :root {
-  --bg: #1c1814;
-  --text: #f0ece6;
-  --muted: #9a8878;
-  --accent: #d07a94;
-  --accent-light: rgba(208, 122, 148, 0.15);
-  --card: rgba(255, 255, 255, 0.07);
-  --card-border: rgba(255, 255, 255, 0.14);
+  --bg: #ede8e0;
+  --text: #1a1818;
+  --muted: #5a5050;
+  --accent: #a85e74;
+  --accent-light: rgba(168, 94, 116, 0.10);
+  --card: rgba(255, 255, 255, 0.52);
+  --card-border: rgba(255, 255, 255, 0.82);
   --radius: 20px;
   --radius-lg: 32px;
   --nav-h: 68px;
@@ -70,7 +70,7 @@ body::after {
   display: flex;
   align-items: center;
   padding: 0 32px;
-  background: rgba(28, 24, 20, 0.80);
+  background: rgba(237, 232, 224, 0.80);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   border-bottom: 1px solid rgba(255,255,255,0.55);
