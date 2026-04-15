@@ -166,12 +166,14 @@ body::after {
 .container {
   max-width: 900px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 .container-wide {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 /* ─── Glass card ─── */
@@ -202,6 +204,12 @@ p { line-height: 1.75; font-size: 0.95rem; }
 /* ─── Section spacing ─── */
 .section { padding: 80px 0; }
 .section-sm { padding: 48px 0; }
+
+/* Gap between consecutive glass blocks inside a page */
+.page > main .glass + .glass,
+.page > main .glass-lg + .glass,
+.page > main .glass + .glass-lg,
+.page > main .glass-lg + .glass-lg { margin-top: 16px; }
 
 /* ─── Page hero ─── */
 .page-hero {
@@ -686,10 +694,20 @@ p { line-height: 1.75; font-size: 0.95rem; }
   .conf-year { font-size: 0.7rem; }
 
   /* Spacing */
-  .section { padding: 44px 0; }
-  .section-sm { padding: 32px 0; }
-  .page-hero { padding: 32px 0 24px; }
+  .section { padding: 48px 0; }
+  .section-sm { padding: 40px 0; }
+  .page-hero { padding: 36px 0 28px; }
   .footer-inner { flex-direction: column; gap: 24px; }
+
+  /* Gap between glass cards in sections */
+  .section > .container > .glass,
+  .section > .container > .glass-lg,
+  .section-sm > .container > .glass,
+  .section-sm > .container > .glass-lg { margin-bottom: 16px; }
+  .section > .container > .glass:last-child,
+  .section > .container > .glass-lg:last-child,
+  .section-sm > .container > .glass:last-child,
+  .section-sm > .container > .glass-lg:last-child { margin-bottom: 0; }
 
   /* Cert gallery */
   .cert-gallery { grid-template-columns: repeat(2, 1fr); gap: 8px; }
