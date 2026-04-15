@@ -715,8 +715,8 @@ p { line-height: 1.75; font-size: 0.95rem; }
 
 @media (max-width: 480px) {
   .nav { padding: 0 18px; }
-  .container { padding: 0 16px; }
-  .container-wide { padding: 0 16px; }
+  .container { padding-left: 16px; padding-right: 16px; }
+  .container-wide { padding-left: 16px; padding-right: 16px; }
   h1 { font-size: 1.65rem; }
   h2 { font-size: 1.2rem; }
   .lead { font-size: 0.95rem; }
