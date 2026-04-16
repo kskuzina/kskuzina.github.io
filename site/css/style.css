@@ -281,6 +281,11 @@ body::after {
   transform: translateY(-3px);
   box-shadow: 0 12px 44px rgba(168, 94, 116, 0.22), 0 4px 10px rgba(168, 94, 116, 0.12);
 }
+/* Subtle warm tint variant — breaks up runs of identical white cards */
+.glass-warm {
+  background: rgba(192, 168, 152, 0.32);
+  border-color: rgba(255, 255, 255, 0.55);
+}
 
 /* ─── Typography ─── */
 h1, h2, h3 { font-family: 'Unbounded', sans-serif; line-height: 1.15; overflow-wrap: break-word; }
