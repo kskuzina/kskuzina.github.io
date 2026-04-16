@@ -356,7 +356,7 @@ p { line-height: 1.75; font-size: 0.95rem; }
 .hero {
   min-height: calc(100vh - var(--nav-h));
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1.2fr;
   align-items: center;
   gap: 48px;
   padding: 80px 0;
@@ -377,7 +377,7 @@ p { line-height: 1.75; font-size: 0.95rem; }
 }
 .hero-photo {
   width: 100%;
-  max-width: 400px;
+  max-width: 520px;
   aspect-ratio: 3/4;
   object-fit: cover;
   border-radius: var(--radius-lg);
