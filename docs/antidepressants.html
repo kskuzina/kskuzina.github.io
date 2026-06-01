@@ -1,0 +1,2511 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Антидепрессанты: что это за класс препаратов и как они работают</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Unbounded:wght@500;600;700;800&display=swap');
+
+    :root {
+      --bg: #ece7df;
+      --paper: #fffdfa;
+      --paper-soft: rgba(251, 250, 247, 0.76);
+      --paper-wash: rgba(255, 255, 255, 0.42);
+      --glass: rgba(255, 255, 255, 0.22);
+      --glass-strong: rgba(255, 255, 255, 0.30);
+      --glass-soft: rgba(255, 255, 255, 0.14);
+      --glass-edge: rgba(255, 255, 255, 0.42);
+      --glass-key: rgba(98, 102, 154, 0.135);
+      --glass-important: rgba(168, 94, 116, 0.12);
+      --glass-context: rgba(211, 161, 167, 0.11);
+      --ink: #171414;
+      --muted: #5a5050;
+      --faint: #746a6a;
+      --site-accent: #a85e74;
+      --science: #62669a;
+      --science-dark: #342f55;
+      --rose: #d3a1a7;
+      --line: rgba(36, 30, 33, 0.14);
+      --line-strong: rgba(36, 30, 33, 0.24);
+      --white-line: rgba(255, 255, 255, 0.68);
+      --shadow: 0 18px 54px rgba(46, 37, 40, 0.12), 0 2px 8px rgba(42, 33, 36, 0.06);
+      --shadow-soft: 0 10px 30px rgba(46, 37, 40, 0.08), 0 1px 4px rgba(42, 33, 36, 0.04);
+      --inner-glass: inset 0 1px 0 rgba(255, 255, 255, 0.48), inset 0 -1px 0 rgba(255, 255, 255, 0.12);
+      --radius: 14px;
+      --radius-soft: 20px;
+      --nav-h: 66px;
+      --text-col: 700px;
+      --fs-xs: 0.78rem;
+      --fs-sm: 0.86rem;
+      --fs-base: 1rem;
+      --fs-lead: 1.08rem;
+      --fs-h3: 1.12rem;
+      --fs-h2: 1.52rem;
+      --fs-h1: 3.05rem;
+      --fs-quote: 1.16rem;
+      --fs-h1-tablet: 2.18rem;
+      --fs-h2-tablet: 1.34rem;
+      --fs-h1-mobile: 1.6rem;
+      --fs-h2-mobile: 1.2rem;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      overflow-x: clip;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      overflow-x: clip;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.30) 0, rgba(255,255,255,0) 420px),
+        linear-gradient(90deg, rgba(168,94,116,0.055) 0, rgba(168,94,116,0) 34%),
+        linear-gradient(240deg, rgba(98,102,154,0.052) 0, rgba(98,102,154,0) 38%),
+        var(--bg);
+      color: var(--ink);
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: 40;
+      pointer-events: none;
+      opacity: 0.035;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+    }
+
+    a { color: inherit; }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      min-height: var(--nav-h);
+      padding: 0 32px;
+      border-bottom: 1px solid var(--white-line);
+      background: rgba(230, 225, 216, 0.92);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+
+    .brand {
+      font-family: Unbounded, Inter, sans-serif;
+      font-size: var(--fs-sm);
+      font-weight: 700;
+      line-height: 1.2;
+      text-decoration: none;
+    }
+
+    .hero-hint {
+      margin: 14px 0 0;
+      max-width: 460px;
+      color: var(--muted);
+      font-size: var(--fs-xs);
+      line-height: 1.55;
+    }
+
+    .topnav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    .topnav a {
+      padding: 7px 12px;
+      border: 1px solid var(--white-line);
+      border-radius: 999px;
+      background: var(--glass);
+      color: var(--muted);
+      font-size: var(--fs-xs);
+      line-height: 1.25;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .topnav a:hover {
+      background: rgba(255, 255, 255, 0.58);
+      color: var(--ink);
+    }
+
+    .page {
+      position: relative;
+      z-index: 1;
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 54px 0 96px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 260px;
+      gap: 42px;
+      align-items: end;
+      padding: 22px 0 46px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .eyebrow,
+    .label,
+    .component-label,
+    .source-kicker {
+      margin: 0;
+      color: var(--science-dark);
+      font-family: Inter, sans-serif;
+      font-size: var(--fs-xs);
+      font-weight: 700;
+      line-height: 1.4;
+      text-transform: uppercase;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 16px;
+      color: var(--site-accent);
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 34px;
+      height: 2px;
+      border-radius: 999px;
+      background: var(--site-accent);
+    }
+
+    h1,
+    h2,
+    h3,
+    .toc-title,
+    .side-title {
+      margin: 0;
+      font-family: Unbounded, Inter, sans-serif;
+      line-height: 1.18;
+      letter-spacing: 0;
+      overflow-wrap: break-word;
+    }
+
+    h1 {
+      max-width: 860px;
+      font-size: var(--fs-h1);
+      font-weight: 700;
+      overflow-wrap: break-word;
+    }
+
+    h2 {
+      font-size: var(--fs-h2);
+      font-weight: 700;
+      overflow-wrap: break-word;
+    }
+
+    h3 {
+      font-size: var(--fs-h3);
+      font-weight: 700;
+      overflow-wrap: break-word;
+    }
+
+    p {
+      margin: 0;
+      font-size: var(--fs-base);
+      font-weight: 400;
+      line-height: 1.82;
+    }
+
+    p + p { margin-top: 18px; }
+
+    strong { font-weight: 650; }
+
+    .lead {
+      max-width: 720px;
+      margin-top: 20px;
+      color: var(--muted);
+      font-size: var(--fs-lead);
+      font-weight: 420;
+      line-height: 1.72;
+    }
+
+    .hero-meta {
+      display: grid;
+      gap: 10px;
+      padding: 0 0 4px;
+    }
+
+    .meta-line {
+      display: grid;
+      gap: 4px;
+      padding-top: 12px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: var(--fs-sm);
+      line-height: 1.45;
+    }
+
+    .meta-line b {
+      color: var(--ink);
+      font-size: var(--fs-xs);
+      font-weight: 650;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 26px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      padding: 11px 18px;
+      border: 1px solid var(--line-strong);
+      border-radius: 999px;
+      color: var(--ink);
+      font-size: var(--fs-sm);
+      font-weight: 600;
+      line-height: 1.2;
+      text-decoration: none;
+      transition: transform 0.16s ease, background 0.16s ease, box-shadow 0.16s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .btn-primary {
+      border-color: var(--ink);
+      background: var(--ink);
+      color: #f6efe8;
+    }
+
+    .btn-secondary {
+      background: var(--glass-strong);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+
+    .section {
+      padding: 42px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .section-head {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(260px, 380px);
+      gap: 28px;
+      align-items: end;
+      margin-bottom: 24px;
+    }
+
+    .section-head p {
+      color: var(--muted);
+      font-size: var(--fs-sm);
+      line-height: 1.62;
+    }
+
+    .toc-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .toc-item {
+      min-height: 86px;
+      border: 1px solid var(--glass-edge);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.20);
+      box-shadow: var(--shadow-soft), var(--inner-glass);
+      backdrop-filter: blur(20px) saturate(1.18);
+      -webkit-backdrop-filter: blur(20px) saturate(1.18);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+    }
+
+    .toc-item a,
+    .toc-card-static {
+      display: grid;
+      grid-template-rows: auto 1fr;
+      gap: 8px;
+      height: 100%;
+      padding: 13px 15px;
+      text-decoration: none;
+    }
+
+    .toc-item.is-pending {
+      opacity: 0.58;
+    }
+
+    .toc-num {
+      color: var(--science-dark);
+      font-family: Inter, sans-serif;
+      font-size: var(--fs-xs);
+      font-weight: 700;
+    }
+
+    .toc-num.is-empty {
+      visibility: hidden;
+    }
+
+    .toc-title {
+      font-size: var(--fs-sm);
+      font-weight: 700;
+    }
+
+    .sample-layout {
+      display: grid;
+      grid-template-columns: minmax(0, var(--text-col)) 220px;
+      gap: 32px;
+      align-items: start;
+    }
+
+    .rail,
+    .side-stack {
+      position: sticky;
+      top: calc(var(--nav-h) + 22px);
+      display: grid;
+      gap: 12px;
+    }
+
+    .rail {
+      padding: 16px;
+      border: 1px solid var(--glass-edge);
+      border-radius: var(--radius);
+      background: var(--glass);
+      box-shadow: var(--shadow-soft), var(--inner-glass);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+    }
+
+    .rail ul {
+      display: grid;
+      gap: 6px;
+      margin: 12px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .rail a {
+      display: block;
+      padding: 8px 0;
+      border-top: 1px solid rgba(36, 30, 33, 0.10);
+      color: var(--muted);
+      font-size: var(--fs-xs);
+      line-height: 1.35;
+      text-decoration: none;
+    }
+
+    .article-flow {
+      display: grid;
+      gap: 0;
+    }
+
+    .article-block {
+      padding: 0 0 40px;
+      margin: 0 0 40px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .article-block:last-child {
+      padding-bottom: 0;
+      margin-bottom: 0;
+      border-bottom: 0;
+    }
+
+    .article-block h2 { margin-bottom: 22px; }
+    .article-block h3 { margin: 28px 0 16px; }
+
+    .article-block .block-lead {
+      color: var(--ink);
+      font-size: var(--fs-base);
+      font-weight: 400;
+      line-height: 1.82;
+    }
+
+    .term {
+      appearance: none;
+      -webkit-appearance: none;
+      display: inline;
+      margin: 0;
+      padding: 0 0.16em;
+      border: 0;
+      border-bottom: 1.5px solid rgba(98, 102, 154, 0.42);
+      border-radius: 6px;
+      background: rgba(98, 102, 154, 0.055);
+      color: inherit;
+      font: inherit;
+      text-align: inherit;
+      cursor: pointer;
+    }
+
+    .term:focus-visible,
+    .btn:focus-visible,
+    .toc-item a:focus-visible,
+    .rail a:focus-visible {
+      outline: 2px solid var(--science);
+      outline-offset: 3px;
+    }
+
+    .term[aria-expanded="true"] {
+      background: rgba(98, 102, 154, 0.12);
+      border-bottom-color: rgba(52, 47, 85, 0.62);
+    }
+
+    .term-note {
+      display: none;
+      margin: 14px 0 18px;
+      padding: 16px 18px;
+      border: 1px solid var(--glass-edge);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.24);
+      color: var(--muted);
+      font-size: var(--fs-base);
+      line-height: 1.65;
+      box-shadow: var(--shadow-soft), var(--inner-glass);
+      backdrop-filter: blur(22px) saturate(1.2);
+      -webkit-backdrop-filter: blur(22px) saturate(1.2);
+    }
+
+    .term-note.open { display: block; }
+
+    .term-note + p {
+      margin-top: 18px;
+    }
+
+    .term-note.open + p {
+      margin-top: 0;
+    }
+
+    .callout {
+      position: relative;
+      overflow: hidden;
+      margin: 24px 0;
+      padding: 20px 22px;
+      border: 1px solid var(--glass-edge);
+      border-radius: var(--radius-soft);
+      background: rgba(255, 255, 255, 0.18);
+      box-shadow: var(--shadow-soft), var(--inner-glass);
+      backdrop-filter: blur(26px) saturate(1.24);
+      -webkit-backdrop-filter: blur(26px) saturate(1.24);
+    }
+
+    .callout p {
+      font-size: var(--fs-base);
+      line-height: 1.7;
+    }
+
+    .callout .component-label {
+      display: inline-flex;
+      align-items: center;
+      margin-bottom: 12px;
+      padding: 5px 9px;
+      border: 1px solid rgba(255, 255, 255, 0.32);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.14);
+      color: var(--science-dark);
+      font-family: Inter, sans-serif;
+      font-size: var(--fs-xs);
+      font-weight: 650;
+      line-height: 1.2;
+      text-transform: none;
+    }
+
+    .callout-key {
+      border-color: rgba(98, 102, 154, 0.20);
+      border-left: 0;
+      background: var(--glass-key);
+    }
+
+    .callout-important {
+      border-color: rgba(168, 94, 116, 0.20);
+      border-left: 0;
+      background: var(--glass-important);
+    }
+
+    .callout-context {
+      border-left: 0;
+      border-color: rgba(211, 161, 167, 0.22);
+      background: var(--glass-context);
+    }
+
+    .callout-lab-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .callout-alt {
+      display: flex;
+      min-height: 210px;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 0;
+    }
+
+    .callout-liquid {
+      border-color: rgba(255, 255, 255, 0.34);
+      background: rgba(255, 255, 255, 0.12);
+      box-shadow: 0 12px 34px rgba(46, 37, 40, 0.06), var(--inner-glass);
+    }
+
+    .callout-tint {
+      border-color: rgba(98, 102, 154, 0.20);
+      background: rgba(98, 102, 154, 0.135);
+    }
+
+    .callout-minimal {
+      border-color: rgba(52, 47, 85, 0.18);
+      background: rgba(212, 204, 192, 0.10);
+      box-shadow: 0 10px 28px rgba(46, 37, 40, 0.045), var(--inner-glass);
+    }
+
+    .callout-final {
+      border-color: rgba(98, 102, 154, 0.18);
+      background: rgba(98, 102, 154, 0.12);
+    }
+
+    .callout-rose {
+      border-color: rgba(168, 94, 116, 0.18);
+      background: linear-gradient(135deg, rgba(168, 94, 116, 0.095), rgba(255, 255, 255, 0.18));
+    }
+
+    .callout-warm {
+      border-color: rgba(211, 161, 167, 0.26);
+      background: linear-gradient(135deg, rgba(211, 161, 167, 0.16), rgba(255, 255, 255, 0.14));
+    }
+
+    .callout-rose .component-label,
+    .callout-warm .component-label {
+      color: #6f3346;
+      background: rgba(255, 255, 255, 0.18);
+    }
+
+    .callout-minimal .component-label {
+      border-color: transparent;
+      background: transparent;
+      padding-left: 0;
+    }
+
+    .pull-quote {
+      margin: 32px 0;
+      padding: 0 0 0 22px;
+      border-left: 4px solid var(--science-dark);
+      color: var(--science-dark);
+      font-family: Unbounded, Inter, sans-serif;
+      font-size: var(--fs-quote);
+      font-weight: 600;
+      line-height: 1.55;
+    }
+
+    .comparison {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      margin: 24px 0;
+    }
+
+    .compare-cell {
+      padding: 17px 18px;
+      border: 1px solid var(--glass-edge);
+      border-radius: var(--radius);
+      background: var(--glass-soft);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+
+    .compare-cell b {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--science-dark);
+      font-family: Inter, sans-serif;
+      font-size: var(--fs-xs);
+      text-transform: uppercase;
+    }
+
+    .compare-cell p {
+      color: var(--muted);
+      font-size: var(--fs-sm);
+      line-height: 1.58;
+    }
+
+    .mini-diagram {
+      margin: 30px 0;
+      padding: 24px 0;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .mini-diagram h3 {
+      margin: 0 0 16px;
+      font-size: var(--fs-base);
+    }
+
+    .diagram-steps {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .step-cell {
+      min-height: 138px;
+      padding: 16px;
+      border: 1px solid rgba(98, 102, 154, 0.20);
+      border-radius: var(--radius);
+      background: var(--glass-soft);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+
+    .step-cell .num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      margin-bottom: 12px;
+      border-radius: 50%;
+      background: var(--science-dark);
+      color: #fff;
+      font-size: var(--fs-xs);
+      font-weight: 700;
+    }
+
+    .step-cell b {
+      display: block;
+      margin-bottom: 7px;
+      font-size: var(--fs-sm);
+      line-height: 1.35;
+    }
+
+    .step-cell span {
+      display: block;
+      color: var(--muted);
+      font-size: var(--fs-xs);
+      line-height: 1.45;
+    }
+
+    .info-figure {
+      margin: 30px 0;
+      padding: 24px 0;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .figure-head {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 16px;
+    }
+
+    .figure-title {
+      margin: 0;
+      color: var(--science-dark);
+      font-family: Unbounded, Inter, sans-serif;
+      font-size: var(--fs-sm);
+      font-weight: 650;
+      line-height: 1.35;
+    }
+
+    .figure-note {
+      margin: 0;
+      max-width: 260px;
+      color: var(--faint);
+      font-size: var(--fs-xs);
+      line-height: 1.45;
+    }
+
+    .figure-placeholder {
+      min-height: 150px;
+      border: 1px dashed rgba(98, 102, 154, 0.24);
+      border-radius: var(--radius-soft);
+      background: rgba(255, 255, 255, 0.08);
+      box-shadow: var(--inner-glass);
+    }
+
+    .figure-image-wrap {
+      overflow-x: auto;
+      border: 1px solid rgba(98, 102, 154, 0.16);
+      border-radius: var(--radius-soft);
+      background: rgba(255, 255, 255, 0.10);
+      box-shadow: var(--inner-glass);
+    }
+
+    .figure-image {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .class-map {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .class-node {
+      min-height: 118px;
+      padding: 15px;
+      border: 1px solid rgba(98, 102, 154, 0.18);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.12);
+      box-shadow: var(--inner-glass);
+    }
+
+    .class-node.is-core {
+      background: rgba(98, 102, 154, 0.10);
+    }
+
+    .class-node.is-rapid {
+      background: rgba(168, 94, 116, 0.10);
+    }
+
+    .class-node b,
+    .timeline-text b {
+      display: block;
+      margin-bottom: 7px;
+      color: var(--ink);
+      font-size: var(--fs-sm);
+      line-height: 1.35;
+    }
+
+    .class-node span,
+    .timeline-text span {
+      display: block;
+      color: var(--muted);
+      font-size: var(--fs-xs);
+      line-height: 1.48;
+    }
+
+    .evidence-matrix {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .evidence-matrix.is-three {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .matrix-card {
+      min-height: 142px;
+      padding: 15px;
+      border: 1px solid rgba(98, 102, 154, 0.18);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.12);
+      box-shadow: var(--inner-glass);
+    }
+
+    .matrix-card b {
+      display: block;
+      margin-bottom: 7px;
+      color: var(--ink);
+      font-size: var(--fs-sm);
+      line-height: 1.35;
+    }
+
+    .matrix-card span {
+      display: block;
+      color: var(--muted);
+      font-size: var(--fs-xs);
+      line-height: 1.48;
+    }
+
+    .matrix-card span + span {
+      margin-top: 8px;
+      padding-top: 8px;
+      border-top: 1px solid rgba(36, 30, 33, 0.10);
+    }
+
+    .matrix-card em {
+      color: var(--science-dark);
+      font-style: normal;
+      font-weight: 650;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 12px;
+      margin: 4px 0 0;
+    }
+
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 92px minmax(0, 1fr);
+      gap: 14px;
+      align-items: start;
+    }
+
+    .timeline-year {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 34px;
+      padding: 7px 10px;
+      border: 1px solid rgba(98, 102, 154, 0.18);
+      border-radius: 999px;
+      background: rgba(98, 102, 154, 0.10);
+      color: var(--science-dark);
+      font-size: var(--fs-xs);
+      font-weight: 700;
+      line-height: 1.2;
+      white-space: nowrap;
+    }
+
+    .timeline-text {
+      position: relative;
+      padding: 2px 0 14px 18px;
+      border-left: 1px solid rgba(98, 102, 154, 0.26);
+    }
+
+    .timeline-text::before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: -5px;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--science);
+      box-shadow: 0 0 0 4px rgba(98, 102, 154, 0.10);
+    }
+
+    .synapse-figure {
+      display: grid;
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .synapse-scene {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(130px, 1.1fr) minmax(0, 1fr);
+      gap: 12px;
+      align-items: center;
+      min-height: 170px;
+    }
+
+    .neuron-side {
+      display: grid;
+      gap: 8px;
+      min-height: 126px;
+      padding: 16px;
+      border: 1px solid rgba(98, 102, 154, 0.18);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.12);
+    }
+
+    .neuron-side b {
+      color: var(--science-dark);
+      font-size: var(--fs-xs);
+      line-height: 1.35;
+      text-transform: uppercase;
+    }
+
+    .neuron-side span,
+    .synapse-action span {
+      color: var(--muted);
+      font-size: var(--fs-xs);
+      line-height: 1.45;
+    }
+
+    .synapse-gap {
+      position: relative;
+      min-height: 126px;
+      border: 1px dashed rgba(98, 102, 154, 0.34);
+      border-radius: var(--radius-soft);
+      background:
+        radial-gradient(circle at 30% 35%, rgba(98, 102, 154, 0.34) 0 4px, transparent 5px),
+        radial-gradient(circle at 54% 55%, rgba(168, 94, 116, 0.28) 0 4px, transparent 5px),
+        radial-gradient(circle at 70% 38%, rgba(98, 102, 154, 0.26) 0 3px, transparent 4px),
+        rgba(255, 255, 255, 0.08);
+    }
+
+    .synapse-gap span {
+      position: absolute;
+      left: 50%;
+      bottom: 14px;
+      transform: translateX(-50%);
+      width: max-content;
+      max-width: calc(100% - 22px);
+      padding: 5px 9px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.34);
+      color: var(--science-dark);
+      font-size: var(--fs-xs);
+      font-weight: 650;
+      line-height: 1.2;
+    }
+
+    .synapse-actions {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .synapse-action {
+      padding: 14px;
+      border: 1px solid rgba(36, 30, 33, 0.12);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.10);
+    }
+
+    .synapse-action b {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--ink);
+      font-size: var(--fs-xs);
+      line-height: 1.35;
+    }
+
+    .evidence-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .evidence-card {
+      min-height: 146px;
+      padding: 16px;
+      border: 1px solid var(--glass-edge);
+      border-radius: var(--radius);
+      background: var(--glass);
+      box-shadow: var(--shadow-soft), var(--inner-glass);
+      backdrop-filter: blur(20px) saturate(1.16);
+      -webkit-backdrop-filter: blur(20px) saturate(1.16);
+    }
+
+    .evidence-card b {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--science-dark);
+      font-size: var(--fs-sm);
+      line-height: 1.35;
+    }
+
+    .evidence-card span {
+      display: block;
+      color: var(--muted);
+      font-size: var(--fs-xs);
+      line-height: 1.5;
+    }
+
+    .side-panel {
+      padding: 16px;
+      border: 1px solid var(--glass-edge);
+      border-radius: var(--radius);
+      background: var(--glass);
+      box-shadow: var(--shadow-soft), var(--inner-glass);
+      backdrop-filter: blur(20px) saturate(1.16);
+      -webkit-backdrop-filter: blur(20px) saturate(1.16);
+    }
+
+    .side-panel.side-rose {
+      border-color: rgba(168, 94, 116, 0.20);
+      background: linear-gradient(145deg, rgba(168, 94, 116, 0.105), rgba(255, 255, 255, 0.16));
+    }
+
+    .side-panel.side-lilac {
+      border-color: rgba(98, 102, 154, 0.21);
+      background: linear-gradient(145deg, rgba(98, 102, 154, 0.115), rgba(255, 255, 255, 0.15));
+    }
+
+    .side-panel.side-warm {
+      border-color: rgba(211, 161, 167, 0.24);
+      background: linear-gradient(145deg, rgba(211, 161, 167, 0.13), rgba(255, 255, 255, 0.14));
+    }
+
+    .side-panel.side-rose .label,
+    .side-panel.side-warm .label {
+      color: var(--site-accent);
+    }
+
+    .side-panel.side-lilac .label {
+      color: var(--science-dark);
+    }
+
+    .side-title {
+      margin: 7px 0 9px;
+      font-size: var(--fs-base);
+    }
+
+    .side-panel p,
+    .side-panel li {
+      color: var(--muted);
+      font-size: var(--fs-xs);
+      line-height: 1.52;
+    }
+
+    .side-panel ul {
+      display: grid;
+      gap: 8px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .source-preview {
+      display: grid;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .source-row {
+      padding: 14px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .source-row p {
+      color: var(--muted);
+      font-size: var(--fs-sm);
+      line-height: 1.56;
+    }
+
+    .source-row a {
+      color: var(--science-dark);
+      font-weight: 600;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    .sources-box {
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      padding: 18px 0;
+    }
+
+    .sources-box summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      cursor: pointer;
+      list-style: none;
+      font-family: Unbounded, Inter, sans-serif;
+      font-size: var(--fs-base);
+      font-weight: 700;
+      line-height: 1.35;
+    }
+
+    .sources-box summary::-webkit-details-marker { display: none; }
+
+    .sources-box summary::after {
+      content: "+";
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      flex: 0 0 auto;
+      border: 1px solid var(--line);
+      border-radius: 50%;
+      color: var(--science-dark);
+      font-family: Inter, sans-serif;
+      font-size: var(--fs-base);
+      font-weight: 500;
+      line-height: 1;
+    }
+
+    .sources-box[open] summary::after {
+      content: "-";
+    }
+
+    .source-note {
+      max-width: 720px;
+      margin-top: 14px;
+      color: var(--muted);
+      font-size: var(--fs-sm);
+      line-height: 1.64;
+    }
+
+    .sources-content {
+      display: grid;
+      gap: 22px;
+      margin-top: 18px;
+    }
+
+    .source-group {
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+    }
+
+    .source-group h3 {
+      margin: 0 0 12px;
+      color: var(--science-dark);
+      font-family: Unbounded, Inter, sans-serif;
+      font-size: var(--fs-sm);
+      line-height: 1.35;
+    }
+
+    .source-list {
+      display: grid;
+      gap: 9px;
+      margin: 0;
+      padding-left: 1.25rem;
+    }
+
+    .source-list li {
+      color: var(--muted);
+      font-size: var(--fs-xs);
+      line-height: 1.55;
+    }
+
+    .source-list a {
+      color: var(--science-dark);
+      font-weight: 600;
+      overflow-wrap: anywhere;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    .footer-band {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 36px;
+      align-items: start;
+    }
+
+    .footer-band p {
+      color: var(--muted);
+      font-size: var(--fs-sm);
+      line-height: 1.68;
+    }
+
+    .footer-band .author-note {
+      display: grid;
+      gap: 16px;
+      max-width: 760px;
+      margin-top: 14px;
+    }
+
+    .author-portrait {
+      width: 300px;
+      aspect-ratio: 3 / 2;
+      object-fit: cover;
+      object-position: center center;
+      border-radius: 14px;
+      display: block;
+      justify-self: end;
+    }
+
+    .footer-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .footer-actions a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 36px;
+      padding: 9px 13px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.24);
+      color: var(--ink);
+      font-size: var(--fs-xs);
+      font-weight: 650;
+      line-height: 1.2;
+      text-decoration: none;
+    }
+
+    .footer-actions a:hover {
+      background: rgba(255, 255, 255, 0.48);
+    }
+
+    @media (max-width: 1040px) {
+      .hero,
+      .section-head,
+      .footer-band {
+        grid-template-columns: 1fr;
+      }
+
+      .author-portrait {
+        width: 100%;
+        max-width: 360px;
+        justify-self: start;
+        order: -1;
+      }
+
+      .side-stack {
+        position: static;
+        grid-column: 1 / -1;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .toc-grid,
+      .evidence-grid,
+      .callout-lab-grid,
+      .class-map,
+      .synapse-actions {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 820px) {
+      .topbar {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 14px 18px;
+      }
+
+      .topnav {
+        justify-content: flex-start;
+      }
+
+      .page {
+        width: min(100% - 30px, 1120px);
+        padding-top: 34px;
+      }
+
+      h1 { font-size: var(--fs-h1-tablet); }
+      h2 { font-size: var(--fs-h2-tablet); }
+
+      .sample-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .rail,
+      .side-stack {
+        position: static;
+      }
+
+      .rail ul,
+      .toc-grid,
+      .side-stack,
+      .evidence-matrix.is-three,
+      .evidence-matrix,
+      .evidence-grid,
+      .callout-lab-grid,
+      .class-map,
+      .synapse-actions {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .figure-head,
+      .synapse-scene {
+        grid-template-columns: 1fr;
+      }
+
+      .figure-head {
+        display: grid;
+        align-items: start;
+      }
+
+      .figure-note {
+        max-width: none;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .page {
+        width: min(100% - 28px, 1120px);
+        padding-bottom: 70px;
+      }
+
+      h1 { font-size: var(--fs-h1-mobile); }
+      h2 { font-size: var(--fs-h2-mobile); }
+      h3 { font-size: var(--fs-base); }
+
+      p,
+      .article-block .block-lead {
+        font-size: var(--fs-base);
+        line-height: 1.74;
+      }
+
+      .lead {
+        font-size: var(--fs-base);
+        line-height: 1.68;
+      }
+
+      .section {
+        padding: 34px 0;
+      }
+
+      .toc-grid,
+      .rail ul,
+      .side-stack,
+      .comparison,
+      .diagram-steps,
+      .evidence-matrix.is-three,
+      .evidence-matrix,
+      .evidence-grid,
+      .callout-lab-grid,
+      .class-map,
+      .synapse-actions {
+        grid-template-columns: 1fr;
+      }
+
+      .timeline-item {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+
+      .timeline-text {
+        padding-left: 14px;
+      }
+
+      .toc-item {
+        min-height: auto;
+      }
+
+      .callout,
+      .compare-cell,
+      .step-cell,
+      .class-node,
+      .neuron-side,
+      .synapse-action,
+      .evidence-card,
+      .side-panel {
+        padding: 16px;
+      }
+
+      .pull-quote {
+        font-size: var(--fs-base);
+        line-height: 1.55;
+      }
+
+      .synapse-image {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="https://kskuzina.github.io/index.html" target="_blank">kskuzina</a>
+    <nav class="topnav" aria-label="Навигация по статье">
+      <a href="#overview">Оглавление</a>
+      <a href="antidepressants.pdf">PDF</a>
+      <a href="#sources">Литература</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="hero" aria-labelledby="page-title">
+      <div>
+        <p class="eyebrow">лонгрид / психообразование</p>
+        <h1 id="page-title">Антидепрессанты: что это за класс препаратов и как они работают</h1>
+        <p class="lead">Обзорный справочник о том, какие бывают антидепрессанты, как они предположительно работают в нервной системе, почему применяются шире депрессии и где их эффект ограничен или неоднороден.</p>
+        <div class="actions" aria-label="Главные действия страницы">
+          <a class="btn btn-primary" href="antidepressants.pdf">Скачать PDF</a>
+        </div>
+        <p class="hero-hint">Эта версия для большого экрана. На телефоне удобнее читать PDF.</p>
+      </div>
+
+      <aside class="hero-meta" aria-label="Метаданные материала">
+        <div class="meta-line"><b>Автор</b><span>Ксения Кузина</span></div>
+        <div class="meta-line"><b>Формат</b><span>образовательный лонгрид</span></div>
+        <div class="meta-line"><b>Данные</b><span>с учётом публикаций на май 2026 года</span></div>
+      </aside>
+    </section>
+
+    <section class="section" id="overview" aria-labelledby="toc-title">
+      <div class="section-head">
+        <div>
+          <p class="label">Оглавление</p>
+          <h2 id="toc-title">Карта материала</h2>
+        </div>
+      </div>
+
+      <ol class="toc-grid">
+        <li class="toc-item"><a href="#intro"><span class="toc-num">01</span><span class="toc-title">Введение</span></a></li>
+        <li class="toc-item"><a href="#block-2"><span class="toc-num">02</span><span class="toc-title">Что такое антидепрессанты как класс</span></a></li>
+        <li class="toc-item"><a href="#block-3"><span class="toc-num">03</span><span class="toc-title">Историческая рамка</span></a></li>
+        <li class="toc-item"><a href="#block-4"><span class="toc-num">04</span><span class="toc-title">База нейрохимии</span></a></li>
+        <li class="toc-item"><a href="#block-5"><span class="toc-num">05</span><span class="toc-title">Механизмы — быстро и медленно</span></a></li>
+        <li class="toc-item"><a href="#block-6"><span class="toc-num">06</span><span class="toc-title">Спектр действия</span></a></li>
+        <li class="toc-item"><a href="#block-7"><span class="toc-num">07</span><span class="toc-title">Почему одной попытки часто недостаточно</span></a></li>
+        <li class="toc-item"><a href="#block-8"><span class="toc-num">08</span><span class="toc-title">Спорные зоны</span></a></li>
+        <li class="toc-item"><a href="#block-9"><span class="toc-num">09</span><span class="toc-title">О названии</span></a></li>
+        <li class="toc-item"><a href="#block-10"><span class="toc-num">10</span><span class="toc-title">Что важно не путать</span></a></li>
+        <li class="toc-item"><a href="#block-11"><span class="toc-num">11</span><span class="toc-title">Заключение</span></a></li>
+        <li class="toc-item"><a href="#sources"><span class="toc-num is-empty" aria-hidden="true">00</span><span class="toc-title">Литература</span></a></li>
+      </ol>
+    </section>
+
+    <section class="section sample-layout" id="intro" aria-label="Блок 1. Введение">
+      <article class="article-flow">
+        <section class="article-block">
+          <h2>1. Введение</h2>
+          <p class="block-lead">Один и тот же препарат могут назначить при депрессии, мигрени, хронической боли и синдроме раздражённого кишечника. На первый взгляд это выглядит странно: как лекарство «<strong>от депрессии</strong>» оказалось в кабинете невролога или гастроэнтеролога?</p>
+
+          <p>Но это не путаница и не маркетинг. Тот же амитриптилин применяют при <button class="term" type="button" data-note="term-neuropathic-pain" aria-controls="term-neuropathic-pain" aria-expanded="false">нейропатической боли</button>, профилактике мигрени и синдроме раздражённого кишечника. Молекула одна; дозы, цели назначения и предполагаемые механизмы разные.</p>
+
+          <div class="term-note" id="term-neuropathic-pain">Нейропатическая боль — боль, связанная с повреждением или нарушенной работой нервной системы. Она может ощущаться как жжение, прострелы, покалывание или болезненная чувствительность, даже когда ткани уже не повреждаются напрямую.</div>
+
+          <div class="callout callout-final callout-rose" id="main-thought">
+            <p class="component-label">Главная мысль</p>
+            <p>«Антидепрессант» — это исторически сложившееся клиническое название, а не описание механизма.</p>
+          </div>
+
+          <p>Оно говорит о важном применении препарата, но не описывает ни его химию, ни всё, что молекула делает в нервной системе.</p>
+
+          <p>Дальше — <strong>обзорный справочник</strong>: какие бывают антидепрессанты, чем они отличаются, как предположительно работают в мозге и теле, почему применяются шире депрессии и где их эффект ограничен, неоднороден или переоценивался. Без диагностики и индивидуальных рекомендаций. В тексте учтены данные, доступные на май 2026 года.</p>
+        </section>
+      </article>
+
+      <aside class="side-stack" aria-label="Опоры страницы">
+        <div class="side-panel side-rose">
+          <p class="label">Рамка</p>
+          <h3 class="side-title">Образовательный материал</h3>
+          <p>Текст помогает ориентироваться в теме. Индивидуальные назначения, замены и отмену препаратов обсуждают с врачом.</p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section sample-layout" id="block-2" aria-label="Блок 2. Что такое антидепрессанты как класс">
+      <article class="article-flow">
+        <section class="article-block">
+          <h2>2. Что такое антидепрессанты как класс</h2>
+
+          <p class="block-lead">Химически антидепрессанты — это не один класс, а несколько разнородных групп: у них разная структура, разные мишени в нервной системе, разные истории появления. Многие из них возникли в разное время и нередко попадали в психиатрию случайно.</p>
+
+          <p>Объединяет их не общая химия, а общая <button class="term" type="button" data-note="term-clinical-niche" aria-controls="term-clinical-niche" aria-expanded="false">клиническая ниша</button>: у каждого из этих препаратов когда-то заметили способность снижать депрессивные симптомы, а потом это проверили и <strong>подтвердили в исследованиях</strong>. Это упрощённая карта. На практике классификаций больше: по химической структуре, поколению, механизму действия и <button class="term" type="button" data-note="term-receptor-profile" aria-controls="term-receptor-profile" aria-expanded="false">рецепторному профилю</button>. Но если идти от того, что чаще встречается в назначениях, получится несколько больших групп. В центре этого текста — СИОЗС, СИОЗСН и ТЦА; остальные группы нужны для контекста.</p>
+
+          <div class="term-note" id="term-clinical-niche">Клиническая ниша — область медицинского применения: при каких состояниях препарат показал пользу, где его назначают и какие симптомы он должен уменьшать. Это не то же самое, что химический класс или точный механизм действия.</div>
+          <div class="term-note" id="term-receptor-profile">Рецепторный профиль — набор мишеней, с которыми взаимодействует препарат: рецепторов, транспортёров, ферментов и других белков. По нему можно понять, почему препараты одного «назначенческого» класса могут давать разные эффекты и побочные реакции.</div>
+
+          <div class="info-figure" aria-label="Карта основных групп антидепрессантов">
+            <div class="figure-head">
+              <h3 class="figure-title">Карта класса: одно название, разные группы</h3>
+              <p class="figure-note">Здесь не химическая классификация целиком, а рабочая карта для чтения статьи.</p>
+            </div>
+            <div class="class-map">
+              <div class="class-node is-core">
+                <b>СИОЗС</b>
+                <span>Серотониновый транспортёр; часто первая линия при депрессии и тревожных расстройствах.</span>
+              </div>
+              <div class="class-node is-core">
+                <b>СИОЗСН</b>
+                <span>Серотонин + норадреналин; часть препаратов используется также при боли.</span>
+              </div>
+              <div class="class-node is-core">
+                <b>ТЦА</b>
+                <span>Старый менее избирательный класс: больше мишеней, больше побочных эффектов.</span>
+              </div>
+              <div class="class-node">
+                <b>ИМАО</b>
+                <span>Влияют на ферментативное разрушение моноаминов; сложнее по взаимодействиям.</span>
+              </div>
+              <div class="class-node">
+                <b>Атипичные</b>
+                <span>Сборная группа: разные механизмы, разные клинические профили.</span>
+              </div>
+              <div class="class-node is-rapid">
+                <b>Быстрые линии</b>
+                <span>Эскетамин и Auvelity меняют разговор о скорости антидепрессивного эффекта.</span>
+              </div>
+            </div>
+          </div>
+
+          <h3 id="ssri">СИОЗС</h3>
+
+          <p>СИОЗС — <strong>селективные ингибиторы обратного захвата серотонина</strong>, англ. SSRI. Это один из самых частых вариантов <button class="term" type="button" data-note="term-first-line" aria-controls="term-first-line" aria-expanded="false">первой линии</button> фармакотерапии при депрессии, тревожных расстройствах, обсессивно-компульсивном расстройстве и посттравматическом стрессовом расстройстве. Сюда относятся флуоксетин (Прозак), сертралин (Золофт), эсциталопрам (Ципралекс), пароксетин (Паксил), циталопрам (Ципрамил), флувоксамин (Феварин).</p>
+
+          <div class="term-note" id="term-first-line">Первая линия — варианты лечения, которые обычно рекомендуют рассматривать в начале при типичной клинической ситуации. Это не значит «лучшее для каждого человека» и не отменяет индивидуального подбора.</div>
+
+          <p>Работают они через серотониновый транспортёр. Это белок, который обычно быстро <strong>убирает серотонин</strong> из пространства между нейронами обратно в клетку. СИОЗС <strong>блокируют</strong> этот «обратный сбор», поэтому серотонин дольше остаётся доступным между клетками и дольше участвует в передаче сигнала. Это первый фармакологический шаг, а не вся история: клинический эффект связан с более медленными перестройками нервной системы, о которых речь дальше.</p>
+
+          <p>Важно: это не значит, что препарат просто «добавляет счастья». Серотонин — не молекула радости, а часть большой <strong>регуляторной системы</strong>, связанной с настроением, тревогой, сном, аппетитом, болью, сексуальной функцией и работой кишечника. Широкое распространение СИОЗС началось с конца 1980-х. Их главное преимущество перед более старыми классами — обычно лучшая переносимость и безопасность при передозировке, а не обязательно большая эффективность.</p>
+
+          <h3 id="snri">СИОЗСН</h3>
+
+          <p>СИОЗСН — <strong>селективные ингибиторы обратного захвата серотонина и норадреналина</strong>, англ. SNRI. Они похожи на СИОЗС, но работают сразу с двумя системами: серотониновой и норадреналиновой. Норадреналин тоже не «одна функция», а система регуляции бодрствования, внимания, реакции на стресс и боль, поэтому у СИОЗСН немного другой профиль действия и побочных эффектов. К этой группе относятся венлафаксин (Велаксин, Эфевелон), дулоксетин (Симбалта), десвенлафаксин (Пристик), левомилнаципран.</p>
+
+          <p>Дулоксетин официально одобрен не только при депрессии и тревоге, но и при болезненной диабетической нейропатии и фибромиалгии. Почему один и тот же препарат может работать в таких разных ситуациях, разберём в блоке про спектр действия.</p>
+
+          <h3 id="tca">ТЦА</h3>
+
+          <p>ТЦА — <strong>трициклические антидепрессанты</strong>, англ. TCA. Это один из самых старых классов: имипрамин был открыт в 1957 году. Сюда относятся амитриптилин (Триптизол, Саротен), нортриптилин, кломипрамин (Анафранил), дезипрамин, имипрамин (Мелипрамин). У кломипрамина особое место в лечении ОКР: он официально одобрен при этом расстройстве, но из-за побочных эффектов сегодня обычно не является первой линией.</p>
+
+          <p>ТЦА менее избирательны, чем СИОЗС и СИОЗСН. Они тоже влияют на обратный захват серотонина и норадреналина, но параллельно затрагивают <strong>другие рецепторные системы</strong> — связанные с бодрствованием, давлением, работой кишечника, мочевого пузыря, слюнных желёз и сердца. Отсюда и побочные эффекты: сухость во рту, запоры, сонливость, головокружение при вставании из-за снижения давления, влияние на сердечную проводимость. Из-за этого ТЦА сегодня редко назначают первой линией при депрессии и особенно осторожны с ними при риске передозировки.</p>
+
+          <p>Зато они по-прежнему активно используются в других областях: при хронической и нейропатической боли, для профилактики мигрени, при синдроме раздражённого кишечника. Там часто нужны другие дозы и другая клиническая логика.</p>
+
+          <h3 id="maoi">ИМАО</h3>
+
+          <p>ИМАО — <strong>ингибиторы моноаминоксидазы</strong>, англ. MAOI. Это ещё один старый класс наряду с ТЦА. К нему относятся фенелзин, транилципромин, моклобемид, селегилин в виде пластыря. Моноаминоксидаза — это фермент, который помогает клетке разрушать <button class="term" type="button" data-note="term-monoamines" aria-controls="term-monoamines" aria-expanded="false">моноамины</button>: серотонин, норадреналин и дофамин. ИМАО блокируют этот фермент, поэтому медиаторы медленнее «утилизируются», а их доступность меняется.</p>
+
+          <div class="term-note" id="term-monoamines">Моноамины — группа сигнальных веществ нервной системы. В контексте антидепрессантов чаще всего говорят о серотонине, норадреналине и дофамине.</div>
+
+          <p>ИМАО могут быть эффективны, особенно при так называемой <button class="term" type="button" data-note="term-atypical-depression" aria-controls="term-atypical-depression" aria-expanded="false">атипичной депрессии</button> и устойчивых случаях. Но у них сложнее профиль безопасности и больше лекарственных взаимодействий. Особенно строгие пищевые ограничения касаются классических необратимых ИМАО — фенелзина и транилципромина: продукты с высоким содержанием тирамина могут в сочетании с ними вызвать опасный скачок давления. У моклобемида, обратимого ингибитора MAO-A, взаимодействия с пищей обычно мягче. Поэтому сегодня ИМАО почти не используют как первую линию.</p>
+
+          <div class="term-note" id="term-atypical-depression">Атипичная депрессия — клинический подтип депрессивного эпизода, для которого обычно описывают реактивность настроения, повышенную сонливость, усиление аппетита или веса, ощущение тяжести в конечностях и чувствительность к межличностному отвержению. Набор критериев может немного различаться между классификациями и исследованиями.</div>
+
+          <h3 id="atypical">Атипичные антидепрессанты</h3>
+
+          <p>Атипичные антидепрессанты — это сборная категория для препаратов, которые не помещаются в первые четыре группы. Сюда относятся бупропион (Велбутрин), миртазапин (Ремерон), тразодон, агомелатин (Вальдоксан), вортиоксетин (Бринтелликс), вилазодон.</p>
+
+          <p>У них разные механизмы и клинические профили. Бупропион действует преимущественно через дофамин и норадреналин, а не через серотонин, и используется также в программах отказа от курения. Миртазапин часто даёт <button class="term" type="button" data-note="term-sedative-action" aria-controls="term-sedative-action" aria-expanded="false">седативный эффект</button> и повышает аппетит, поэтому может быть полезен, когда депрессия сочетается с бессонницей и потерей веса. Тразодон назначают на ночь из-за седативного действия. Агомелатин связан с мелатониновой системой. Вортиоксетин и вилазодон работают с серотониновой системой сложнее, чем классические СИОЗС.</p>
+
+          <div class="term-note" id="term-sedative-action">Седативное действие — способность препарата снижать возбуждение и вызывать сонливость. Иногда это используют как желательный эффект при бессоннице, но в другой ситуации такая сонливость может быть побочным эффектом.</div>
+
+          <p>Общее у них одно: они не укладываются в простую схему «ингибитор обратного захвата» или «ингибитор фермента».</p>
+
+          <h3 id="rapid">Отдельная новая линия: препараты с быстрым началом действия</h3>
+
+          <p>Это не единый химический класс, а новая клиническая линия, важная <strong>из-за скорости</strong> и других механизмов. С 2019 года в США одобрен интраназальный эскетамин — Spravato: сначала для терапевтически резистентной депрессии, позже — также для депрессивных симптомов у пациентов с большим депрессивным расстройством и <button class="term" type="button" data-note="term-suicidal-ideation" aria-controls="term-suicidal-ideation" aria-expanded="false">острой суицидальной идеацией</button>, вместе с пероральным антидепрессантом. Важно: эффективность именно в предотвращении суицида или снижении суицидальных мыслей формально не доказана. С 2022 года одобрена пероральная комбинация декстрометорфана и бупропиона — Auvelity — для большого депрессивного расстройства.</p>
+
+          <div class="term-note" id="term-suicidal-ideation">Суицидальная идеация — клинический термин для суицидальных мыслей, намерений или планов. Слово «острая» указывает на актуальное состояние, требующее срочной профессиональной оценки.</div>
+
+          <p>Их особенность — нетипичная для антидепрессантов скорость: у эскетамина эффект у части пациентов может быть заметен в первые сутки; у Auvelity — в первую неделю, а не через несколько недель, как у классических препаратов. Механизмы у них тоже другие. Эскетамин связан прежде всего с <button class="term" type="button" data-note="term-nmda" aria-controls="term-nmda" aria-expanded="false">NMDA-рецепторами</button> и <button class="term" type="button" data-note="term-glutamate" aria-controls="term-glutamate" aria-expanded="false">глутаматной системой</button> — одной из главных систем возбуждения в мозге. У Auvelity механизм комбинированный: декстрометорфан влияет на NMDA-рецепторы, а бупропион добавляет норадреналин-дофаминовый компонент и меняет метаболизм декстрометорфана.</p>
+
+          <div class="term-note" id="term-nmda">NMDA-рецепторы — один из типов рецепторов к глутамату. Они участвуют в возбуждающей передаче сигналов и в процессах нейропластичности, поэтому важны для обсуждения быстрых антидепрессивных эффектов.</div>
+          <div class="term-note" id="term-glutamate">Глутаматная система — главная возбуждающая сигнальная система мозга. Она связана не с «хорошим настроением» напрямую, а с передачей сигналов, обучением, пластичностью и перестройкой нейронных сетей.</div>
+
+          <p>В России и многих странах эти препараты <strong>пока недоступны</strong> или применяются только в специализированных условиях; статус доступности лучше уточнять на момент чтения. Но они уже меняют сам разговор о том, как антидепрессант может работать и как быстро может появляться эффект.</p>
+
+          <div class="callout callout-final" id="block-2-main">
+            <p class="component-label">Главная мысль</p>
+            <p>Антидепрессанты сильно отличаются друг от друга — по механизму, скорости, побочным эффектам и тому, кому они подходят. Когда говорят «антидепрессанты влияют на то-то», обычно имеют в виду усреднённую картину по нескольким очень разным препаратам. Это почти всегда слишком грубо.</p>
+          </div>
+
+          <p>К концу текста мы вернёмся к тому, почему в литературе всё чаще предлагают описывать эти препараты точнее, чем одним словом «антидепрессанты».</p>
+        </section>
+      </article>
+
+      <aside class="side-stack" aria-label="Опоры блока 2">
+        <div class="side-panel side-lilac">
+          <p class="label">Карта</p>
+          <h3 class="side-title">Разные механизмы</h3>
+          <p>СИОЗС, СИОЗСН, ТЦА, ИМАО, атипичные препараты и быстрые новые линии объединены клинической областью, хотя устроены по-разному.</p>
+        </div>
+        <div class="side-panel side-rose">
+          <p class="label">Важно</p>
+          <h3 class="side-title">Точность обобщений</h3>
+          <p>Фраза «антидепрессанты влияют на...» требует уточнения: какой препарат, какой механизм, какая клиническая ситуация.</p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section sample-layout" id="block-3" aria-label="Блок 3. Историческая рамка">
+      <article class="article-flow">
+        <section class="article-block">
+          <h2>3. Историческая рамка</h2>
+
+          <p class="block-lead" id="iproniazid">История антидепрессантов начинается там, где её никто не искал: в <button class="term" type="button" data-note="term-tuberculosis" aria-controls="term-tuberculosis" aria-expanded="false">туберкулёзных</button> санаториях начала 1950-х, где испытывали новый класс препаратов — <strong>противотуберкулёзные гидразиды</strong>. Один из них, ипрониазид, лечил туберкулёз умеренно, но пациенты, годами лежавшие в апатии и истощении, на этом препарате заметно <strong>оживали</strong> — набирали вес, начинали общаться.</p>
+
+          <div class="term-note" id="term-tuberculosis">Туберкулёз — инфекционное заболевание, которое чаще всего поражает лёгкие. В середине XX века его часто лечили длительно, в санаториях, поэтому именно там врачи могли замечать неожиданные эффекты новых препаратов.</div>
+          <p>Газеты тех лет писали, что больные «танцуют в коридорах» — образ, перешедший потом в исторические пересказы. Психиатр Натан Клайн (Nathan Kline) и несколько других врачей перенесли наблюдение из санаториев в психиатрию: в 1957 году Клайн сообщил о применении ипрониазида при тяжёлой депрессии — препарата, который «трогал не только лёгкие». К концу 1950-х ипрониазид прочно вошёл в психиатрию как первый антидепрессант из класса <strong>ИМАО</strong>.</p>
+
+          <p id="imipramine">Параллельная история — в Швейцарии. В клинике Münsterlingen психиатр Роланд Кун (Roland Kuhn) пробовал на пациентах вещество от компании Geigy — фармацевты надеялись получить новый антипсихотик. На шизофрении препарат не работал; но Кун заметил, что у пациентов с депрессией настроение постепенно выравнивалось. Молекула называлась имипрамин. В 1957 году Кун впервые сообщил об антидепрессивном эффекте имипрамина; англоязычная статья в <em>American Journal of Psychiatry</em> вышла в 1958-м. Имипрамин стал первым <strong>трициклическим антидепрессантом</strong>. Следующие десятилетия он оставался «золотым стандартом» от депрессии — несмотря на побочные эффекты и риски при передозировке, из-за которых сегодня препарат с таким набором эффектов вряд ли получил бы статус первой линии.</p>
+
+          <p id="monoamine-hypothesis">Препараты работали, но никто точно не понимал как. Объяснения появлялись постепенно. В 1965 году американский психиатр Джозеф Шилдкраут (Joseph Schildkraut) собрал известные факты в одну гипотезу. С одной стороны, ипрониазид и имипрамин повышают доступность <strong>катехоламинов</strong> (норадреналина и его родственников). С другой — резерпин, лекарство от гипертонии, истощающее эти моноамины, у части пациентов провоцировал депрессивные эпизоды.</p>
+
+          <p>Из этих наблюдений Шилдкраут сформулировал осторожную гипотезу: некоторые, а возможно и все депрессии связаны <strong>со снижением катехоламинов</strong> (прежде всего норадреналина) — либо абсолютным, либо относительным. Через два года британский психиатр Алек Коппен (Alec Coppen) обратил внимание на серотонин: в обзоре биохимии <button class="term" type="button" data-note="term-affective-disorders" aria-controls="term-affective-disorders" aria-expanded="false">аффективных расстройств</button> он подробно обосновал, что в депрессии вовлечена и катехоламиновая, и серотониновая система — а серотонин, возможно, центральнее.</p>
+
+          <div class="term-note" id="term-affective-disorders">Аффективные расстройства — группа состояний, в которых центрально нарушается настроение: например, депрессивные и биполярные расстройства. Термин чаще встречается в профессиональной литературе.</div>
+
+          <p>Так сложилась <strong>моноаминовая гипотеза депрессии</strong> — не одна теория, а семейство идей: в депрессии нарушены моноаминовые системы передачи — прежде всего норадреналина, серотонина и дофамина.</p>
+
+          <p id="fluoxetine">В 1987 году регулятор FDA одобрил флуоксетин (Прозак). Это был не первый в мире селективный ингибитор обратного захвата серотонина — в Европе раньше появлялся зимелидин, но его сняли с рынка по соображениям безопасности. Зато флуоксетин стал первым культурным и коммерческим символом нового поколения антидепрессантов и флагманом класса СИОЗС.</p>
+
+          <p>Переносимость оказалась настолько лучше, чем у трицикликов, что в следующие два десятилетия СИОЗС стали одним из самых частых <button class="term" type="button" data-note="term-psychotropic" aria-controls="term-psychotropic" aria-expanded="false">психотропных</button> назначений в развитых странах. Вместе с эпохой СИОЗС широко разошлась популярная формула «химического дисбаланса»: депрессия якобы возникает из-за нехватки серотонина, а препарат эту нехватку исправляет. Удобная для маркетинга и для объяснений пациенту — но заметно проще, чем научная моноаминовая гипотеза, и тем более чем сегодняшние данные.</p>
+
+          <div class="term-note" id="term-psychotropic">Психотропные препараты — лекарства, которые влияют на психические функции через нервную систему: настроение, тревогу, сон, мышление, возбуждение, восприятие. Это широкий зонтик, а не один класс препаратов.</div>
+
+          <div class="info-figure" aria-label="Ключевые точки истории антидепрессантов">
+            <div class="figure-head">
+              <h3 class="figure-title">Линия времени: эффект шёл впереди объяснения</h3>
+            </div>
+            <div class="timeline">
+              <div class="timeline-item">
+                <span class="timeline-year">1950-е</span>
+                <div class="timeline-text">
+                  <b>Ипрониазид</b>
+                  <span>Препарат из туберкулёзных санаториев стал первым антидепрессантом из класса ИМАО.</span>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <span class="timeline-year">1957–1958</span>
+                <div class="timeline-text">
+                  <b>Имипрамин</b>
+                  <span>Предполагаемый антипсихотик оказался первым трициклическим антидепрессантом.</span>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <span class="timeline-year">1965–1967</span>
+                <div class="timeline-text">
+                  <b>Моноаминовая гипотеза</b>
+                  <span>Шилдкраут и Коппен предложили объяснять эффект через катехоламины и серотонин.</span>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <span class="timeline-year">1987</span>
+                <div class="timeline-text">
+                  <b>Флуоксетин</b>
+                  <span>Прозак стал культурным и коммерческим символом нового поколения СИОЗС.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="callout callout-final callout-warm" id="block-3-main">
+            <p class="component-label">Главная рамка</p>
+            <p>Общая рамка всей этой истории — двойственная. Ранние открытия действительно были случайными: препарат для туберкулёза оказался психоактивным; предполагаемый антипсихотик стал антидепрессантом; теории механизма писались <em>задним числом</em>, чтобы объяснить уже наблюдаемый клинический эффект. Но дальше работала уже не только случайность: флуоксетин был результатом целенаправленного поиска селективного ингибитора обратного захвата серотонина. В этой области клинический эффект обычно опережал его объяснение. Отсюда поправка для дальнейшего чтения: за каждым «современным объяснением» стоит десятилетие наблюдений, а не наоборот. И, как мы увидим в блоке 5, исчерпывающего ответа на «как именно» наука пока не даёт.</p>
+          </div>
+        </section>
+      </article>
+
+      <aside class="side-stack" aria-label="Опоры блока 3">
+        <div class="side-panel side-warm">
+          <p class="label">Рамка</p>
+          <h3 class="side-title">Эффект раньше теории</h3>
+          <p>В этой истории клинические наблюдения часто появлялись раньше объяснений: сначала видели эффект, потом пытались понять механизм.</p>
+        </div>
+        <div class="side-panel">
+          <p class="label">Важно</p>
+          <h3 class="side-title">Случайность и поиск</h3>
+          <p>Ранние открытия начались с неожиданных наблюдений, а последующие препараты уже создавались через более направленный поиск.</p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section sample-layout" id="block-4" aria-label="Блок 4. База нейрохимии">
+      <article class="article-flow">
+        <section class="article-block">
+          <h2>4. База нейрохимии — где это всё происходит</h2>
+
+          <p class="block-lead">Чтобы понять, куда антидепрессанты вмешиваются, нужна короткая карта места действия.</p>
+
+          <p>Нервная система состоит из клеток-нейронов, которые передают друг другу сигналы. Внутри нейрона сигнал идёт <strong>электрически</strong> — как изменение напряжения на мембране. А вот между нейронами во многих синапсах он передаётся <strong>химически</strong>.</p>
+
+          <p id="synapse">Даже если две клетки связаны, они обычно не срастаются в один провод: между окончанием одного нейрона и мембраной другой клетки остаётся микроскопическая синаптическая щель размером около 20–40 нанометров. Первый нейрон выбрасывает в неё молекулы вещества-передатчика — <button class="term" type="button" data-note="term-neurotransmitter" aria-controls="term-neurotransmitter" aria-expanded="false">нейромедиатора</button>, второй считывает их специальными белками-рецепторами.</p>
+
+          <div class="term-note" id="term-neurotransmitter">Нейромедиатор — сигнальное вещество, с помощью которого нервные клетки передают сообщения друг другу или другим клеткам. Серотонин, норадреналин, дофамин и глутамат — примеры нейромедиаторов.</div>
+
+          <p>Рецептор не просто «ловит» молекулу. Связывание нейромедиатора с рецептором меняет <strong>состояние клетки</strong>: следующий нейрон может стать более готовым к разряду или менее готовым — а может запустить более медленные внутриклеточные процессы. А когда таких маленьких изменений много, меняется работа целых <strong>нейронных сетей</strong>.</p>
+
+          <p id="reuptake">Чтобы передача оставалась передачей, а не постоянным фоном, медиатор после работы нужно из синаптической щели убирать. Часть молекул возвращается в клетку через специальные белки-транспортёры, часть разрушается ферментами, часть рассеивается и захватывается соседними клетками, включая <button class="term" type="button" data-note="term-glia" aria-controls="term-glia" aria-expanded="false">глию</button>. Возврат через транспортёр называют <strong>обратным захватом</strong> (англ. reuptake).</p>
+
+          <div class="term-note" id="term-glia">Глия — клетки нервной системы, которые сами не нейроны, но поддерживают их работу: помогают с питанием, защитой, изоляцией волокон и регулированием химической среды вокруг синапсов.</div>
+
+          <div class="info-figure" aria-label="Схема химической передачи сигнала в синапсе">
+            <div class="figure-head">
+              <h3 class="figure-title">Синапс: где появляется точка приложения</h3>
+              <p class="figure-note">Упрощённая карта: выброс медиатора, связывание с рецепторами, обратный захват и ферментативное расщепление.</p>
+            </div>
+            <div class="figure-image-wrap">
+              <img class="figure-image synapse-image" src="assets/synapse_neurochemistry.png" alt="Схема синапса: пресинаптический нейрон высвобождает нейромедиатор в синаптическую щель; молекулы связываются с рецепторами постсинаптической клетки; часть медиатора возвращается через обратный захват или расщепляется ферментами. Отдельно отмечены точки действия СИОЗС, СИОЗСН, ТЦА и ИМАО." loading="lazy" decoding="async">
+            </div>
+          </div>
+
+          <p>Многие классические и часто назначаемые антидепрессанты вмешиваются именно в <strong>обратный захват моноаминов</strong>; ИМАО — в их <strong>ферментативное расщепление</strong>. Но не все антидепрессанты сводятся к этим двум механизмам: у миртазапина, тразодона, агомелатина, вортиоксетина, эскетамина и других препаратов есть важные рецепторные, <button class="term" type="button" data-note="term-glutamatergic" aria-controls="term-glutamatergic" aria-expanded="false">глутаматергические</button> и другие механизмы.</p>
+
+          <div class="term-note" id="term-glutamatergic">Глутаматергические механизмы — процессы, связанные с глутаматом, главным возбуждающим нейромедиатором мозга. Они важны для передачи сигнала, обучения и нейропластичности.</div>
+
+          <p id="monoamine-systems">Исторически большинство классических антидепрессантов нацелены на моноаминовые системы. В них входят <strong>серотонин</strong> (англ. 5-HT), <strong>норадреналин</strong> (англ. NE) и <strong>дофамин</strong> (англ. DA). Но это не вся карта: современные объяснения включают и глутаматергическую передачу, и мелатониновые рецепторы, и нейропластичность, и стресс-регуляцию. Просто для понимания СИОЗС, СИОЗСН, ТЦА и ИМАО моноамины остаются главным входом.</p>
+
+          <p id="not-mood-molecules">Серотонин, норадреналин и дофамин — не «молекулы настроения», «молекулы стресса» и «молекулы удовольствия». Каждый из них — не отдельная кнопка, а часть большой системы: нейронов, их проекций, рецепторов, транспортёров и ферментов. В разных участках мозга и тела такие системы делают разные вещи. Серотониновые сигналы участвуют в регуляции настроения, тревоги, сна, аппетита, болевого порога, кишечной моторики; норадреналиновые — в бодрствовании, концентрации, ответе на стресс; дофаминовые — в мотивации, вознаграждении, движениях. Поэтому одна и та же молекула может влиять не на «одно настроение», а сразу на несколько систем тела — включая такие, как сексуальная функция и желудочно-кишечный тракт.</p>
+
+          <div class="callout callout-final" id="block-4-main">
+            <p class="component-label">Переход к механизму</p>
+            <p>Дальше — самое интересное. Первые фармакологические изменения могут начаться уже после первых доз: например, СИОЗС довольно быстро блокируют серотониновый транспортёр и меняют доступность серотонина для рецепторов. А пациент часто чувствует заметный эффект не через час и не через день, а намного позже. О том, почему так, — следующий блок.</p>
+          </div>
+        </section>
+      </article>
+
+      <aside class="side-stack" aria-label="Опоры блока 4">
+        <div class="side-panel side-rose">
+          <p class="label">Важно</p>
+          <h3 class="side-title">Медиаторы как часть систем</h3>
+          <p>Клинический эффект зависит не от одной молекулы, а от того, где работают нейроны, рецепторы, транспортёры и ферменты этой системы.</p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section sample-layout" id="block-5" aria-label="Блок 5. Механизмы — быстро и медленно">
+      <article class="article-flow">
+        <section class="article-block">
+          <h2>5. Механизмы — быстро и медленно</h2>
+
+          <p class="block-lead">В блоке 4 мы остановились на парадоксе. Первые фармакологические действия могут начаться <strong>быстро</strong>: СИОЗС и СИОЗСН за часы меняют доступность серотонина или норадреналина для рецепторов. А клинический эффект — то, что пациент чувствует как «становится лучше», — обычно оценивают <strong>через 2–4 недели</strong>; полноценный ответ может занимать <strong>4–6 недель</strong> и больше.</p>
+
+          <p>При этом у части пациентов первые статистически различимые улучшения на СИОЗС могут появляться уже к концу первой недели, а раннее улучшение в первые две недели повышает вероятность дальнейшего ответа, но не гарантирует его. Если препарат «исправляет дефицит», почему эффект всё равно разворачивается постепенно?</p>
+
+          <p>Этот зазор — одна из главных проблем для упрощённой версии моноаминовой гипотезы, где депрессию представляют как простой дефицит медиатора, а препарат — как его немедленное восполнение. Но он же стал источником нескольких более интересных объяснений. Ни одно из них пока не закрыто как доказанный механизм клинического эффекта. Скорее всего, реальная картина — это сочетание нескольких процессов разной скорости.</p>
+
+          <h3>Первое объяснение — про внутренний «тормоз» серотониновой системы</h3>
+
+          <p>Обычно мы представляем передачу сигнала так: один нейрон выбросил серотонин, следующий нейрон его «считал». Но у серотониновой системы есть ещё и обратная связь. Часть рецепторов работает не как приёмник для следующего нейрона, а как датчик на самом серотониновом нейроне: не стало ли серотонина вокруг <strong>слишком много</strong>?</p>
+
+          <p>Когда СИОЗС блокирует обратный захват, серотонин дольше остаётся доступным между клетками. Система замечает это и может временно включить тормоз: <strong>«серотонина уже много, выбрасываем меньше»</strong>. Поэтому в первые недели всё не так просто, как «препарат повысил серотонин — человеку сразу стало лучше».</p>
+
+          <p>Постепенно этот тормоз может ослабевать. Рецепторы обратной связи становятся менее чувствительными к избытку медиатора, и серотониновая система может активнее передавать сигнал дальше — в том числе в зоны мозга, связанные с эмоциями, памятью и регуляцией стресса. В научном языке это называют десенситизацией ауторецепторов. В этой модели чаще всего обсуждают 5-HT1A-ауторецепторы в <button class="term" type="button" data-note="term-raphe-nuclei" aria-controls="term-raphe-nuclei" aria-expanded="false">ядрах шва</button>. Это старая и влиятельная модель задержки эффекта СИОЗС: она помогает понять, почему первые фармакологические изменения начинаются <strong>быстро</strong>, а клинический эффект может разворачиваться неделями. Но это не универсальное объяснение действия всех антидепрессантов.</p>
+
+          <div class="term-note" id="term-raphe-nuclei">Ядра шва — группы нейронов в стволе мозга. Многие серотониновые нейроны начинаются именно там и посылают проекции в разные зоны мозга, поэтому этот участок важен для обсуждения серотониновой системы.</div>
+
+          <h3>Второе объяснение — про нейропластичность</h3>
+
+          <p><strong>Нейропластичность — это способность мозга менять свои связи</strong>: усиливать одни, ослаблять другие, перестраиваться под влиянием опыта, стресса, обучения, сна, психотерапии и лекарств. В этой модели антидепрессанты важны не потому, что просто «поднимают уровень серотонина», а потому что при длительном воздействии могут запускать более медленные <button class="term" type="button" data-note="term-cellular-processes" aria-controls="term-cellular-processes" aria-expanded="false">клеточные процессы</button>. Проще говоря: быстрые изменения происходят на уровне сигнала, а медленные — на уровне настройки сети. Меняется сила связей между нейронами, поддерживается рост и выживание нейрональных отростков, могут перестраиваться сети, связанные со стрессом, памятью и регуляцией эмоций.</p>
+
+          <div class="term-note" id="term-cellular-processes">Клеточные процессы — изменения внутри клетки: работа рецепторов и ферментов, включение или выключение генов, синтез белков, рост и ослабление контактов между клетками. Такие процессы обычно разворачиваются медленнее, чем простая передача сигнала.</div>
+
+          <p>Главный кандидат здесь — <strong>BDNF, нейротрофический фактор мозга</strong> (<em>brain-derived neurotrophic factor</em>). Его часто описывают как один из белков, которые помогают нейронам выживать, поддерживать связи и легче перестраиваться.</p>
+
+          <p>В мета-анализах у пациентов с депрессией часто находят более низкие периферические уровни BDNF (то есть в крови), а после лечения — их повышение. Но это не доказывает, что низкий BDNF — причина депрессии или что повышение BDNF само по себе объясняет клиническое улучшение. Небольшие исследования тканей мозга после смерти тоже намекают на снижение BDNF — прежде всего в <button class="term" type="button" data-note="term-hippocampus" aria-controls="term-hippocampus" aria-expanded="false">гиппокампе</button> и префронтальной коре.</p>
+
+          <div class="term-note" id="term-hippocampus">Гиппокамп — структура мозга, важная для памяти, обучения и реакции на стресс. В исследованиях депрессии его часто обсуждают вместе с нейропластичностью и работой стресс-систем.</div>
+
+          <p>В экспериментах на животных эта линия выглядит довольно убедительно. У людей данные менее однородны: BDNF, который измеряют в крови, — слабый индикатор того, что происходит в самом мозге; <button class="term" type="button" data-note="term-heterogeneous-depression" aria-controls="term-heterogeneous-depression" aria-expanded="false">депрессия гетерогенна</button>; и часть эффекта плацебо тоже может сопровождаться изменениями нейропластичности. Поэтому фраза «антидепрессанты работают через нейропластичность» — это многообещающая гипотеза, а не полный и окончательно доказанный механизм клинического эффекта у людей.</p>
+
+          <div class="term-note" id="term-heterogeneous-depression">Депрессия гетерогенна — значит, что под одним диагнозом могут быть разные сочетания симптомов, причин, биологических процессов и жизненных обстоятельств. Поэтому один механизм редко объясняет все случаи депрессии.</div>
+
+          <h3>Третье объяснение — про оптику</h3>
+
+          <p>В когнитивно-нейропсихологической модели Кэтрин Хармер (Catherine Harmer) антидепрессанты могут рано менять <strong>обработку эмоциональной информации</strong>: уменьшать негативное смещение восприятия и усиливать обработку позитивных стимулов. Это может происходить раньше субъективного улучшения настроения. В экспериментальных задачах люди могут реже считывать лица как враждебные; неоднозначные ситуации интерпретировать менее негативно; лучше запоминать позитивные слова. Изменилось не настроение само по себе — изменился «фильтр», через который мозг обрабатывает мир. По этой гипотезе клинический эффект через несколько недель — это <strong>накопленное</strong> последствие того, что человек неделями встречает новый день через чуть менее тёмные очки.</p>
+
+          <h3>И свежее наблюдение, к которому стоит относиться осторожно</h3>
+
+          <p>В 2021 году группа Эеро Кастрена (Eero Castrén) в Финляндии показала в доклинических моделях, что разные антидепрессанты — СИОЗС, трициклики и даже <button class="term" type="button" data-note="term-ketamine" aria-controls="term-ketamine" aria-expanded="false">кетамин</button> — могут напрямую связываться с <strong>рецептором TrkB</strong>. TrkB — рецептор, через который BDNF передаёт сигнал. Если совсем просто: BDNF помогает нейронным связям перестраиваться, а TrkB — один из главных «приёмников» этого сигнала. По этой гипотезе антидепрессанты могут не просто менять уровни серотонина или норадреналина, а ещё и облегчать BDNF-зависимую пластичность — делать систему перестройки связей более готовой к работе.</p>
+
+          <div class="term-note" id="term-ketamine">Кетамин — препарат, изначально применявшийся как анестетик. В психиатрии его изучают из-за быстрых антидепрессивных эффектов в контролируемых медицинских условиях; он связан прежде всего с глутаматной системой и NMDA-рецепторами.</div>
+
+          <p>Это могло бы объяснить, почему столь разные по химии препараты могут сходиться в общем результате — влиянии на пластичность нервных сетей. Гипотеза элегантная и потенциально мощная, но пока её нельзя подавать как установленный клинический механизм действия антидепрессантов у людей.</p>
+
+          <div class="callout callout-final callout-rose" id="block-5-main">
+            <p class="component-label">Главная рамка</p>
+            <p>Антидепрессант делает с мозгом несколько вещей одновременно, на разных скоростях. Что-то меняется в часы или дни: концентрации медиаторов, ранние сдвиги в обработке эмоциональной информации. Что-то — в недели: десенситизация ауторецепторов, изменения BDNF-сигналинга, перестройка сетей. Какая из этих линий главная для клинического эффекта — у исследователей пока нет единого ответа. Поэтому фраза «антидепрессанты работают так-то» в строгом смысле сейчас некорректна: ни одна из гипотез не отвечает на вопрос «как именно» полностью. Это пригодится в блоке про спорные зоны.</p>
+          </div>
+        </section>
+      </article>
+
+      <aside class="side-stack" aria-label="Опоры блока 5">
+        <div class="side-panel side-rose">
+          <p class="label">Зазор</p>
+          <h3 class="side-title">Клинический эффект позже</h3>
+          <p>Фармакологический шаг может начаться в часы, а заметное улучшение часто оценивают неделями.</p>
+        </div>
+        <div class="side-panel side-lilac">
+          <p class="label">Важно</p>
+          <h3 class="side-title">Модели без финальной формулы</h3>
+          <p>Ауторецепторы, нейропластичность, BDNF и эмоциональная обработка объясняют части картины; общий механизм остаётся открытым.</p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section sample-layout" id="block-6" aria-label="Блок 6. Спектр действия">
+      <article class="article-flow">
+        <section class="article-block">
+          <h2>6. Спектр действия</h2>
+
+          <p class="block-lead">Если читать инструкции к разным СИОЗС, быстро выясняется странная на первый взгляд вещь: один и тот же препарат может иметь <strong>несколько</strong> психиатрических показаний. Например, сертралин одобрен при депрессии, ОКР, паническом расстройстве, ПТСР, социальной тревоге и предменструальном дисфорическом расстройстве. Флуоксетин — при депрессии, ОКР, булимии и паническом расстройстве; отдельные формы флуоксетина используются и при предменструальном дисфорическом расстройстве. Набор показаний зависит от конкретной молекулы и страны регистрации.</p>
+
+          <p>И это <strong>не ограничивается психиатрией</strong>. Дулоксетин, помимо депрессии, официально одобрен при болезненной диабетической нейропатии и фибромиалгии. Амитриптилин активно используют для профилактики мигрени и при хронической боли. Низкие дозы трициклических антидепрессантов, например амитриптилина, рекомендуются при синдроме раздражённого кишечника (СРК).</p>
+
+          <p>Здесь снова помогает различение из блоков 4–5: антидепрессант называют антидепрессантом по историческому и клиническому показанию, но молекула не знает диагноза. Для большинства классических антидепрессантов основная точка входа — системы серотонина, норадреналина и дофамина. Но общий принцип шире: это препараты, которые меняют работу нейромедиаторных и регуляторных сетей, а не «точечно чинят депрессию». Эти сети участвуют не только в настроении, но и в тревоге, боли, сне, аппетите, сексуальной функции и работе кишечника. Конкретнее по группам.</p>
+
+          <h3 id="anxiety-ocd-ptsd">Тревожные расстройства, ОКР, ПТСР</h3>
+
+          <p>Самая очевидная зона пересечения — тревожные расстройства, обсессивно-компульсивное расстройство и посттравматическое стрессовое расстройство. При них часть СИОЗС и СИОЗСН имеет хорошую доказательную базу и часто используется как первая линия фармакотерапии. Но «первая линия фармакотерапии» не означает «первое и главное лечение всегда таблетка». При ОКР и ПТСР психотерапевтические подходы с хорошей доказательной базой часто стоят рядом или впереди медикаментов.</p>
+
+          <p>При ОКР ответ на СИОЗС обычно оценивают позже, чем при депрессии, — примерно через 8–12 недель, а дозы нередко доходят до верхней части терапевтического диапазона. При ПТСР медикаменты могут снижать симптомы, но во многих руководствах предпочтительный старт — <button class="term" type="button" data-note="term-trauma-focused-therapy" aria-controls="term-trauma-focused-therapy" aria-expanded="false">травмофокусированная психотерапия</button>, если она доступна и человек готов к такой работе. Из препаратов наиболее устойчиво фигурируют сертралин, пароксетин и венлафаксин; официально для ПТСР в США одобрены сертралин и пароксетин.</p>
+
+          <div class="term-note" id="term-trauma-focused-therapy">Травмофокусированная психотерапия — подходы, которые прямо работают с травматическим опытом, его воспоминаниями, избеганием и связанными убеждениями. При ПТСР такие методы часто имеют более сильную доказательную базу, чем неспецифическая поддерживающая терапия.</div>
+
+          <h3 id="pain-fibromyalgia">Хроническая боль и фибромиалгия</h3>
+
+          <p>При некоторых болевых состояниях антидепрессанты используют не потому, что боль «на самом деле от депрессии», а потому что серотонин и норадреналин участвуют в <strong>системах контроля боли</strong>. Эти системы могут усиливать или приглушать болевой сигнал на уровне спинного и головного мозга. Например, при болезненной диабетической нейропатии дулоксетин 60 мг/сут имеет доказательства умеренного качества. В исследованиях выраженным облегчением часто считают снижение боли на 50% и больше. По сравнению с плацебо такой результат получает примерно один дополнительный человек на каждые пять пациентов, принимающих препарат.</p>
+
+          <p>При нейропатической боли амитриптилин и другие трициклические антидепрессанты остаются препаратами первой линии в ряде рекомендаций. При фибромиалгии картина осторожнее: в рекомендациях <button class="term" type="button" data-note="term-eular" aria-controls="term-eular" aria-expanded="false">EULAR</button> физические упражнения — единственное вмешательство, рекомендованное настойчиво. Лекарства, включая амитриптилин и дулоксетин, рассматриваются слабее: как симптоматические опции, которые могут подбираться индивидуально. То есть «один и тот же препарат» — но не обязательно «через тот же механизм». При боли важную роль отводят <button class="term" type="button" data-note="term-descending-pain-control" aria-controls="term-descending-pain-control" aria-expanded="false">нисходящим системам контроля боли</button>, где участвуют серотонин и норадреналин. У ТЦА могут добавляться и другие эффекты — например седативное действие и влияние на разные рецепторные системы, что одновременно и помогает симптомам, и ухудшает переносимость.</p>
+
+          <div class="term-note" id="term-eular">EULAR — Европейский альянс ассоциаций ревматологов. Эта организация выпускает рекомендации по ревматологическим заболеваниям и связанным состояниям, включая фибромиалгию.</div>
+
+          <div class="term-note" id="term-descending-pain-control">Нисходящие системы контроля боли — нервные пути, по которым мозг может усиливать или ослаблять болевой сигнал, идущий от тела. В этих системах участвуют серотонин и норадреналин, поэтому часть антидепрессантов применяют при некоторых болевых состояниях.</div>
+
+          <h3 id="ibs">Синдром раздражённого кишечника</h3>
+
+          <p>Для СРК эта логика проверялась и в крупном клиническом исследовании. В 2023 году в <em>Lancet</em> вышло исследование ATLANTIS: низкодозный амитриптилин — 10–30 мг, с постепенным подбором дозы по симптомам и переносимости — у пациентов с СРК в первичном звене оказался эффективнее плацебо как вторая линия после стандартных подходов. Американская коллегия гастроэнтерологов в руководстве 2021 года относит ТЦА при СРК к сильным рекомендациям.</p>
+
+          <p>Тут тоже — другие дозы, <strong>другие предполагаемые мишени</strong>. Кишечник имеет собственную нервную систему, а большая часть серотонина организма производится именно в желудочно-кишечном тракте, прежде всего специальными клетками слизистой кишечника — <button class="term" type="button" data-note="term-enterochromaffin-cells" aria-controls="term-enterochromaffin-cells" aria-expanded="false">энтерохромаффинными клетками</button>. Поэтому препараты, влияющие на серотониновую и норадренергическую передачу, могут затрагивать не только настроение, но и висцеральную чувствительность, боль и моторику.</p>
+
+          <div class="term-note" id="term-enterochromaffin-cells">Энтерохромаффинные клетки — клетки слизистой кишечника, которые производят и выделяют серотонин. Этот серотонин участвует в работе кишечника, включая моторику и чувствительность, а не просто связан с настроением.</div>
+
+          <h3 id="migraine">Мигрень</h3>
+
+          <p>В профилактике мигрени амитриптилин давно используется; в рекомендациях Американской академии неврологии и Американского общества головной боли 2012 года он отнесён к препаратам с вероятной эффективностью. Среди антидепрессантов для профилактики мигрени также обсуждается венлафаксин. Но это не значит, что антидепрессанты — универсальный первый выбор при мигрени. Снова — часто другие дозы и другая логика применения.</p>
+
+          <div class="callout callout-final callout-warm" id="block-6-main">
+            <p class="component-label">Главный вывод</p>
+            <p>Антидепрессанты — это препараты с системными нейробиологическими эффектами. Они могут менять работу сетей, участвующих в настроении, тревоге, боли, сне, аппетите и висцеральной чувствительности. Поэтому один и тот же препарат может иметь разные клинические применения, но дозы, длительность, ожидаемый эффект и предполагаемые механизмы при этом разные. Фраза «помогает при боли через тот же механизм, что и при депрессии» некорректна — даже если препарат один и тот же.</p>
+          </div>
+        </section>
+      </article>
+
+      <aside class="side-stack" aria-label="Опоры блока 6">
+        <div class="side-panel side-warm">
+          <p class="label">Карта</p>
+          <h3 class="side-title">Один препарат, разные задачи</h3>
+          <p>Одна молекула может применяться в разных состояниях, потому что вмешивается в регуляторные сети.</p>
+        </div>
+        <div class="side-panel side-rose">
+          <p class="label">Важно</p>
+          <h3 class="side-title">Разные клинические задачи</h3>
+          <p>При боли, СРК, мигрени и депрессии отдельно оценивают дозы, цели, длительность и предполагаемые механизмы.</p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section sample-layout" id="block-7" aria-label="Блок 7. Почему одной попытки часто недостаточно">
+      <article class="article-flow">
+        <section class="article-block">
+          <h2>7. Почему одной попытки часто недостаточно</h2>
+
+          <p class="block-lead">Если бы антидепрессанты быстро и надёжно выводили всех пациентов <strong>в ремиссию</strong>, тема была бы закрыта ещё в XX веке. Но депрессия гетерогенна, а ответ на лечение <strong>сильно различается</strong>: кому-то становится легче за несколько недель, кому-то нужен другой препарат или комбинация, кто-то не достигает ремиссии даже после нескольких попыток. Различаются скорость улучшения, глубина ответа, переносимость, риск <button class="term" type="button" data-note="term-relapse" aria-controls="term-relapse" aria-expanded="false">рецидива</button> и шанс дойти именно до ремиссии.</p>
+
+          <div class="term-note" id="term-relapse">Рецидив — возвращение симптомов после улучшения или ремиссии. Это не то же самое, что отдельный плохой день: обычно речь о более устойчивом возвращении клинически значимых симптомов.</div>
+
+          <p>Самая известная попытка измерить это в реальной последовательности лечения — <strong>исследование STAR*D</strong>, <em>Sequenced Treatment Alternatives to Relieve Depression</em>. Его провели в США в 2000–2003 годах. Это было не короткое испытание одного препарата против <button class="term" type="button" data-note="term-placebo" aria-controls="term-placebo" aria-expanded="false">плацебо</button>, а большое прагматичное исследование: что происходит, если пациент начинает с одного антидепрессанта, а при недостаточном эффекте последовательно пробует <strong>другие стратегии</strong>. Около 4 000 взрослых пациентов с большим депрессивным расстройством без <button class="term" type="button" data-note="term-psychotic-symptoms" aria-controls="term-psychotic-symptoms" aria-expanded="false">психотических симптомов</button> начинали лечение с СИОЗС — циталопрама. Тем, кому он не помог или плохо переносился, предлагали следующие шаги: смену антидепрессанта, добавление другого препарата, когнитивную терапию как вариант переключения или добавления, а дальше — более сложные комбинации и препараты других классов. То есть STAR*D пыталось ответить на очень практический вопрос: не «работает ли один препарат в идеальных условиях», а <strong>«что делать, если первая попытка не сработала»</strong>.</p>
+
+          <div class="term-note" id="term-placebo">Плацебо — средство без активного действующего вещества, которое используют в исследованиях для сравнения. Оно помогает отделить специфический эффект препарата от ожиданий, естественного течения симптомов и самого факта наблюдения.</div>
+          <div class="term-note" id="term-psychotic-symptoms">Психотические симптомы — симптомы, при которых нарушается контакт с реальностью: например, бредовые убеждения, галлюцинации или выраженная дезорганизация мышления. При депрессии их наличие меняет клиническую оценку и подход к лечению.</div>
+
+          <div class="info-figure" aria-label="Схема исследования STAR*D">
+            <div class="figure-head">
+              <h3 class="figure-title">STAR*D: как была устроена последовательность</h3>
+              <p class="figure-note">Не один препарат против плацебо, а проверка следующих шагов после недостаточного ответа.</p>
+            </div>
+            <div class="diagram-steps">
+              <div class="step-cell">
+                <span class="num">1</span>
+                <b>Старт</b>
+                <span>Около 4 000 взрослых пациентов начинали с СИОЗС — циталопрама.</span>
+              </div>
+              <div class="step-cell">
+                <span class="num">2</span>
+                <b>Если не помогло</b>
+                <span>Смена антидепрессанта, добавление другого препарата или когнитивная терапия.</span>
+              </div>
+              <div class="step-cell">
+                <span class="num">3</span>
+                <b>Следующие шаги</b>
+                <span>Более сложные комбинации и препараты других классов.</span>
+              </div>
+            </div>
+          </div>
+
+          <p>Оригинальный отчёт 2006 года сообщил о кумулятивной ремиссии <strong>около 67%</strong> после прохождения до четырёх последовательных шагов лечения. Ремиссия здесь — не «человек навсегда полностью здоров», а состояние, где симптомы падают ниже заранее заданного клинического порога: <strong>ближе к «почти отсутствуют»</strong>, чем к абсолютному исчезновению. Но цифра 67% ушла в учебники, руководства и разговоры с пациентами как простая формула: «попробуете несколько вариантов, и в двух третях случаев найдём, что работает». Это была одна из самых цитируемых статистик в современной психиатрии.</p>
+
+          <p>В 2023 году группа Эда Пигота (Ed Pigott) опубликовала в <em>BMJ Open</em> повторный анализ данных STAR*D с попыткой максимально следовать заранее заявленному протоколу. Этот пересчёт не закрыл спор о STAR*D: авторы оригинальных публикаций STAR*D позже ответили, что данные остаются клинически значимыми. Но работа Пигота резко охладила знаменитую цифру 67%. Суть критики такая. В исходном протоколе STAR*D главным результатом должна была быть слепая оценка симптомов по шкале HRSD — одной из стандартных шкал депрессии: ремиссией считали показатель ниже 8 баллов. Но в опубликованных отчётах шире использовались другие шкалы, включая самоотчётную и клиническую версии QIDS. Они тоже измеряют симптомы депрессии, но это уже не тот заранее заявленный способ подсчёта главного результата.</p>
+
+          <p>Авторы повторного анализа также утверждали, что в расчёты вошли пациенты, которых по протоколу не должны были учитывать: например, те, у кого на старте не было нужных оценок или кто не соответствовал критериям острого депрессивного эпизода. Когда данные пересчитали ближе к исходному протоколу, <strong>знаменитые 67% снизились</strong>: в самом строгом варианте <strong>до 35%</strong>, в более расширенном — примерно <strong>до 41%</strong>.</p>
+
+          <p>Безопасный вывод отсюда не «антидепрессанты не работают». STAR*D не был исследованием «препарат против плацебо»; он отвечал на другой вопрос — что происходит, когда в обычной клинической логике последовательно пробуют разные варианты лечения. И здесь вывод строже: формула «попробуем несколько вариантов, и в двух третях случаев найдём, что работает» выглядит менее надёжной, чем казалось.</p>
+
+          <p>После первой попытки значимая часть пациентов не достигает ремиссии. С каждым следующим шагом шанс ремиссии <strong>в среднем</strong> снижается, а доля людей, которые прекращают лечение или выпадают из исследования, растёт. У части пациентов формируется то, что называют <strong>терапевтически резистентной депрессией</strong>.</p>
+
+          <p>Резистентную депрессию чаще всего определяют как отсутствие достаточного ответа или ремиссии после <strong>минимум</strong> двух адекватных курсов антидепрессантов — с достаточной дозой, длительностью и регулярным приёмом. Но даже здесь нет одного универсального определения: оно различается между исследованиями и регуляторными документами. Перед тем как называть депрессию резистентной, важно исключить псевдорезистентность — ситуацию, где лечение кажется «неработающим», хотя причина может быть не в устойчивости самой депрессии. Например: неверный диагноз, <button class="term" type="button" data-note="term-bipolar-depression" aria-controls="term-bipolar-depression" aria-expanded="false">биполярная депрессия</button> вместо униполярной, недостаточная доза или длительность лечения, нерегулярный приём, тяжёлые побочные эффекты, употребление веществ, соматические причины симптомов или активные стрессовые факторы.</p>
+
+          <div class="term-note" id="term-bipolar-depression">Биполярная депрессия — депрессивный эпизод в рамках биполярного расстройства. Внешне он может быть похож на униполярную депрессию, но лечебная логика отличается, потому что важны риск мании или гипомании и роль нормотимиков.</div>
+
+          <p>Почему именно у конкретного человека препарат не срабатывает, пока невозможно предсказать точно. Есть данные о роли сопутствующих расстройств и болезней, тяжести и длительности эпизода, тревоги, хронического стресса, сна, боли, воспалительных маркеров и особенностей обмена лекарств в печени. Но это всё ещё не даёт простой персонализированной формулы выбора. Фармакогенетика может помочь с метаболизмом и переносимостью отдельных лекарств, но не отвечает надёжно на вопрос: <strong>«какой антидепрессант точно сработает?»</strong> Поэтому выбор лечения пока остаётся не точным подбором «по анализу крови», а пошаговым процессом: уточнить диагноз, посмотреть на профиль симптомов, прошлый опыт лечения, побочные эффекты, взаимодействия и предпочтения пациента; регулярно оценивать ответ и при необходимости менять план.</p>
+
+          <div class="info-figure" aria-label="Почему ответ на антидепрессант трудно предсказать">
+            <div class="figure-head">
+              <h3 class="figure-title">Почему ответ нельзя точно предсказать</h3>
+              <p class="figure-note">Факторы, которые могут влиять на ответ, но не дают простой формулы выбора.</p>
+            </div>
+            <div class="class-map">
+              <div class="class-node">
+                <b>Сопутствующие состояния</b>
+                <span>Расстройства, болезни, боль, сон и тревога могут менять клиническую картину.</span>
+              </div>
+              <div class="class-node">
+                <b>Тяжесть и длительность</b>
+                <span>Эпизоды отличаются по выраженности, давности и риску рецидива.</span>
+              </div>
+              <div class="class-node">
+                <b>Стресс и воспаление</b>
+                <span>Хронический стресс и воспалительные маркеры обсуждаются как часть неоднородной картины.</span>
+              </div>
+              <div class="class-node">
+                <b>Обмен лекарств</b>
+                <span>Печень влияет на концентрации препаратов, но это не равно точному прогнозу эффекта.</span>
+              </div>
+              <div class="class-node">
+                <b>Переносимость</b>
+                <span>Побочные эффекты и взаимодействия могут ограничивать даже потенциально полезный препарат.</span>
+              </div>
+              <div class="class-node">
+                <b>Предпочтения</b>
+                <span>Прошлый опыт, ожидания и готовность к плану лечения тоже важны для результата.</span>
+              </div>
+            </div>
+          </div>
+
+          <p>Именно поэтому так много внимания получают стратегии для недостаточного ответа: добавление второго препарата, психотерапия, процедуры нейростимуляции — например электросудорожная терапия и транскраниальная магнитная стимуляция, — кетамин/эскетамин при резистентной депрессии. Это отдельные большие темы, но для этой брошюры важна одна мысль: <strong>если первая или вторая попытка с антидепрессантом не сработала, варианты лечения не заканчиваются</strong>.</p>
+
+          <div class="callout callout-final" id="block-7-main">
+            <p class="component-label">Главная мысль</p>
+            <p>Неответ на первую или вторую попытку — это не доказательство, что лечение «не для вас» и что вариантов больше нет. Это сигнал пересмотреть диагноз, дозу, длительность, переносимость, сопутствующие факторы и следующий шаг лечения.</p>
+          </div>
+        </section>
+      </article>
+
+      <aside class="side-stack" aria-label="Опоры блока 7">
+        <div class="side-panel side-lilac">
+          <p class="label">STAR*D</p>
+          <h3 class="side-title">Последовательность лечения</h3>
+          <p>STAR*D показывает сценарий после недостаточного ответа: смену стратегии, добавление лечения или следующий этап.</p>
+        </div>
+        <div class="side-panel side-warm">
+          <p class="label">Практически</p>
+          <h3 class="side-title">Следующий шаг</h3>
+          <p>Недостаточный эффект — повод пересмотреть диагноз, дозу, длительность, переносимость и сопутствующие факторы.</p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section sample-layout" id="block-8" aria-label="Блок 8. Спорные зоны">
+      <article class="article-flow">
+        <section class="article-block">
+          <h2>8. Спорные зоны</h2>
+
+          <p class="block-lead">Исследовательское поле антидепрессантов — это место живых дискуссий. STAR*D в блоке 7 — один такой пример. Вот ещё три, о которых вы, скорее всего, уже слышали или ещё услышите.</p>
+
+          <h3 id="serotonin-theory">8.1. Серотониновая теория после Moncrieff 2022</h3>
+
+          <p>В июле 2022 года онлайн вышел обзор обзоров группы Джоанны Монкриф (Joanna Moncrieff) и Рут Купер (Ruth Cooper). Такие работы не анализируют отдельные эксперименты напрямую, а собирают вместе уже существующие обзоры и мета-анализы. Авторы рассмотрели несколько линий данных: уровни серотонина и продуктов его обмена, рецепторы и транспортёр серотонина, <button class="term" type="button" data-note="term-genetic-associations" aria-controls="term-genetic-associations" aria-expanded="false">генетические ассоциации</button> и эксперименты с истощением <button class="term" type="button" data-note="term-tryptophan" aria-controls="term-tryptophan" aria-expanded="false">триптофана</button>.</p>
+
+          <div class="term-note" id="term-genetic-associations">Генетические ассоциации — статистические связи между вариантами генов и каким-то признаком или состоянием. Такая связь сама по себе не доказывает, что конкретный ген — причина депрессии.</div>
+          <div class="term-note" id="term-tryptophan">Триптофан — аминокислота, из которой организм может синтезировать серотонин. В исследованиях истощение триптофана используют как способ временно снизить доступность сырья для серотониновой системы.</div>
+
+          <div class="info-figure" aria-label="Какие линии данных рассматривал обзор Moncrieff 2022">
+            <div class="figure-head">
+              <h3 class="figure-title">Moncrieff 2022: что сравнивали</h3>
+            </div>
+            <div class="class-map">
+              <div class="class-node">
+                <b>Уровни серотонина</b>
+                <span>Смотрели данные о серотонине и продуктах его обмена.</span>
+              </div>
+              <div class="class-node">
+                <b>Рецепторы и транспортёр</b>
+                <span>Оценивали работы о мишенях серотониновой системы.</span>
+              </div>
+              <div class="class-node">
+                <b>Генетика</b>
+                <span>Проверяли ассоциации с генами, связанными с серотониновой передачей.</span>
+              </div>
+              <div class="class-node">
+                <b>Истощение триптофана</b>
+                <span>Искали, что происходит при временном снижении доступности предшественника серотонина.</span>
+              </div>
+              <div class="class-node">
+                <b>Тип работы</b>
+                <span>Обзор обзоров оценивает уже собранные данные; это другой формат, не испытание препарат–плацебо.</span>
+              </div>
+              <div class="class-node">
+                <b>Вопрос теории</b>
+                <span>Она оценивала сильную серотониновую гипотезу, а не эффективность антидепрессантов.</span>
+              </div>
+            </div>
+          </div>
+
+          <p>Вывод был резкий, но его важно формулировать точно: обзор не нашёл убедительных и последовательных доказательств сильной версии <strong>серотониновой гипотезы</strong> — что депрессия вызвана сниженной концентрацией или активностью серотонина.</p>
+
+          <p>В популярных пересказах это превратилось в гораздо более сильный тезис: «учёные доказали, что антидепрессанты не работают». Но это логически не следует из обзора. Из того, что простая теория «химического дисбаланса» не подтверждена, никак не следует, что препараты не помогают. <strong>Эффективность лекарства и истинность теории о причине болезни — это два разных вопроса.</strong> Аспирин снижает температуру не потому, что лихорадка — это нехватка аспирина.</p>
+
+          <p>В июне 2023 года в той же <em>Molecular Psychiatry</em> вышел ответ Самира Джохара (Sameer Jauhar) и большой группы нейробиологов и психиатров. Джохар и коллеги утверждали, что обзор Moncrieff переоценил силу отрицательного вывода: по их мнению, критерии качества, отбор и интерпретация части данных были спорными, в том числе по одному из типов серотониновых рецепторов. Данные по истощению триптофана тоже не поддерживают простую модель «мало серотонина = депрессия у всех», но у некоторых уязвимых групп они всё же указывают на участие серотониновой системы в регуляции настроения.</p>
+
+          <p>Что разумно сказать сегодня. Рекламно-популярная формула «депрессия = низкий серотонин» не подтверждена. Более слабая и сложная идея — что серотониновая система участвует в регуляции настроения, эмоциональной обработки, тревоги и реакции на стресс — остаётся научно живой. А вопрос эффективности антидепрессантов нужно оценивать отдельно, по клиническим испытаниям, а не по истинности или ложности метафоры <em>«химического дисбаланса»</em>.</p>
+
+          <h3 id="placebo-efficacy">8.2. Насколько эффективны антидепрессанты против плацебо</h3>
+
+          <p>Главный вопрос здесь не в том, работают ли антидепрессанты «вообще». В среднем — да, они превосходят плацебо. Более трудный вопрос: <strong>насколько велик этот эффект и как он распределяется между разными пациентами</strong>.</p>
+
+          <p>В 2018 году в <em>Lancet</em> вышел один из самых крупных анализов на эту тему — сетевой мета-анализ Андреа Чиприани (Andrea Cipriani) и коллег. Авторы собрали 522 <button class="term" type="button" data-note="term-double-blind-rct" aria-controls="term-double-blind-rct" aria-expanded="false">двойных слепых рандомизированных исследования</button>: 116 477 взрослых пациентов, 21 антидепрессант, в основном краткосрочное лечение большого депрессивного расстройства — около 8 недель.</p>
+
+          <div class="term-note" id="term-double-blind-rct">Двойное слепое рандомизированное исследование — дизайн, где участников случайно распределяют по группам, а ни пациент, ни исследователь, оценивающий результат, не знают, кто получает препарат, а кто плацебо или другой вариант лечения.</div>
+
+          <p>Главный вывод был оптимистичным, но не без нюансов: все 21 препарата статистически превосходили плацебо по доле ответивших на лечение. «Ответом» обычно считают снижение симптомов на 50% и больше по шкале депрессии. <strong>Но статистическое превосходство не означает, что эффект большой у каждого конкретного пациента.</strong></p>
+
+          <p>Через год группа Йенса Мункхольма (Jens Munkholm) критически пересмотрела часть этой базы. Они использовали не только опубликованные статьи, а полные отчёты исследований для регуляторов (<em>Clinical Study Reports</em>) — там, где такие отчёты были доступны. Это было только 19 исследований из 522, то есть не полная перепроверка всей работы Чиприани. Но результат показал важную проблему: опубликованная статья и полный регуляторный отчёт об одном и том же исследовании могут заметно расходиться.</p>
+
+          <p>В этом подмножестве расхождения нашли примерно в 63% исследований. А средняя разница между антидепрессантом и плацебо по шкале HAM-D составила около 1,97 балла. HAM-D — это одна из стандартных шкал для оценки выраженности депрессии. Важно: эти 1,97 балла — средний групповой эффект. Это не значит, что каждый пациент на антидепрессанте «улучшился на два балла». У кого-то эффект больше, у кого-то меньше, у кого-то почти не виден. Авторы этого повторного анализа также оценили общую уверенность в доказательствах как очень низкую.</p>
+
+          <p>Картину дополняют ещё две важные работы. Влиятельная, но спорная работа Ирвинга Кирша (Irving Kirsch) на данных <button class="term" type="button" data-note="term-fda" aria-controls="term-fda" aria-expanded="false">FDA</button> показала: средняя разница между антидепрессантом и плацебо <strong>растёт с исходной тяжестью депрессии</strong>. По их анализу, эта разница достигает выбранного авторами порога клинической значимости в основном при очень тяжёлой депрессии. Эту работу важно цитировать как часть дискуссии, а не как окончательный ответ.</p>
+
+          <div class="term-note" id="term-fda">FDA — Управление по санитарному надзору за качеством пищевых продуктов и медикаментов США. Это регулятор, который оценивает данные о безопасности и эффективности лекарств для американского рынка.</div>
+
+          <p>А в 2022 году Майкл Стоун (Michael Stone) и коллеги опубликовали в <em>BMJ</em> анализ индивидуальных данных FDA. Они смотрели не только на среднюю разницу между группами, но и на распределение индивидуальных ответов. По их модели, примерно у 15% участников был выраженный лекарственный эффект сверх плацебо-ответа.</p>
+
+          <div class="info-figure" aria-label="Как читать исследования эффективности антидепрессантов">
+            <div class="figure-head">
+              <h3 class="figure-title">Как читать эти исследования</h3>
+              <p class="figure-note">Здесь важна граница вывода: разные работы отвечают на разные вопросы.</p>
+            </div>
+            <div class="evidence-matrix">
+              <div class="matrix-card">
+                <b>Cipriani 2018</b>
+                <span><em>Данные:</em> 522 краткосрочных двойных слепых РКИ; все 21 антидепрессант в среднем превосходили плацебо.</span>
+                <span><em>Граница вывода:</em> это не означает большой эффект у каждого пациента и не отвечает на вопрос долгосрочной терапии.</span>
+              </div>
+              <div class="matrix-card">
+                <b>Munkholm 2019</b>
+                <span><em>Данные:</em> повторный разбор базы Cipriani и 19 полных отчётов исследований; расхождения в отчётности и очень низкая уверенность в доказательствах.</span>
+                <span><em>Граница вывода:</em> это частичная проверка качества данных, а не новая полная перепроверка всех 522 исследований.</span>
+              </div>
+              <div class="matrix-card">
+                <b>Kirsch 2008</b>
+                <span><em>Данные:</em> FDA-испытания четырёх препаратов; разница препарат–плацебо росла с исходной тяжестью, главным образом из-за меньшего плацебо-ответа.</span>
+                <span><em>Граница вывода:</em> это спорный анализ ограниченной выборки, а не универсальное правило для всех антидепрессантов и пациентов.</span>
+              </div>
+              <div class="matrix-card">
+                <b>Stone 2022</b>
+                <span><em>Данные:</em> индивидуальные данные FDA; модель распределения ответов оценила выраженный специфический лекарственный эффект примерно у 15% участников.</span>
+                <span><em>Граница вывода:</em> 15% — не доля всех, кому стало лучше, и не способ заранее выбрать пациента, которому препарат поможет.</span>
+              </div>
+            </div>
+          </div>
+
+          <p>Это не значит, что антидепрессанты «помогают только 15%». Часть улучшения бывает и в плацебо-группе: из-за естественного течения эпизода, ожиданий, контакта с лечением, регулярного наблюдения и других факторов. Цифра 15% говорит именно о дополнительном специфическом эффекте препарата поверх этого фона.</p>
+
+          <p>Что разумно сказать. Антидепрессанты в среднем превосходят плацебо в краткосрочных исследованиях большого депрессивного расстройства, но средний эффект обычно скромный. И этот средний эффект скрывает неоднородность: у части пациентов улучшение выраженное, у части — небольшое, у части — почти незаметное.</p>
+
+          <p>Чем тяжелее исходная депрессия, тем заметнее может быть разница между препаратом и плацебо, но точный размер этого градиента остаётся предметом спора. Это хорошо сочетается с практической картиной из STAR*D: антидепрессанты помогают части пациентов, но <strong>ответ неоднороден</strong>, а последовательный подбор не гарантирует ремиссию.</p>
+
+          <h3 id="withdrawal">8.3. Синдром отмены</h3>
+
+          <p>До недавнего времени во многих руководствах и учебных текстах симптомы отмены описывались как обычно лёгкие, кратковременные и <strong>проходящие за 1–2 недели.</strong> В 2019 году вышел спорный, но очень влиятельный систематический обзор Джеймса Дэвиса (James Davies) и Джона Рида (John Read): они оценили среднюю частоту симптомов отмены примерно в 56%, причём у части людей симптомы могли длиться <strong>дольше нескольких недель.</strong></p>
+
+          <p>Эта работа стала важной коррекцией прежнего недооценивания проблемы, но её методологию критиковали: источники были очень разнородными, часть данных пришла из опросов, а отделить симптомы отмены от рецидива и <button class="term" type="button" data-note="term-nocebo" aria-controls="term-nocebo" aria-expanded="false">ноцебо-эффекта</button> в таких данных трудно.</p>
+
+          <div class="term-note" id="term-nocebo">Ноцебо-эффект — ухудшение самочувствия или появление симптомов под влиянием ожидания вреда, тревоги или негативной информации о лечении. В исследованиях отмены он важен, потому что симптомы могут появляться даже после прекращения плацебо.</div>
+
+          <p>В том же году Марк Хоровиц (Mark Horowitz) и Дэвид Тейлор (David Taylor) предложили фармакологическое объяснение, почему быстрая отмена может быть проблемной. Связь между дозой СИОЗС и силой блокады серотонинового транспортёра нелинейна: на низких дозах даже небольшой шаг вниз может давать непропорционально большой биологический сдвиг.</p>
+
+          <p>Отсюда идея гиперболического снижения дозы — всё более мелкими шагами. Это не доказанный универсальный протокол для всех пациентов, но сильный фармакологический аргумент против резкой отмены. Британский институт <button class="term" type="button" data-note="term-nice" aria-controls="term-nice" aria-expanded="false">NICE</button> в 2022 году изменил рекомендации по депрессии: теперь там прямо сказано, что симптомы отмены могут быть лёгкими и короткими, но могут оказаться тяжёлыми и длительными; отмену нужно проводить <strong>постепенно</strong>, в темпе, переносимом пациентом, иногда неделями или месяцами.</p>
+
+          <div class="term-note" id="term-nice">NICE (National Institute for Health and Care Excellence) — государственный орган в Великобритании, который разрабатывает клинические рекомендации для национальной системы здравоохранения. Его руководства считаются одним из ориентиров доказательной медицины в Европе.</div>
+
+          <p>В 2024 году вышел крупный мета-анализ Йохана Хенсслера (Johan Henssler) и коллег: 79 исследований, около 21 000 пациентов, с отдельным вниманием к плацебо-контролируемым данным.</p>
+
+          <p>Картина получилась такой: симптомы отмечались у 31% после отмены антидепрессанта и у 17% после отмены плацебо; разница около 14–15 процентных пунктов может отражать специфический вклад препарата сверх фоновых и ноцебо-эффектов. Тяжёлые симптомы отмены оценивались примерно как 1 случай на 35 пациентов.</p>
+
+          <div class="info-figure" aria-label="Как читать цифры синдрома отмены антидепрессантов">
+            <div class="figure-head">
+              <h3 class="figure-title">Как читать цифры отмены</h3>
+              <p class="figure-note">Они говорят о разных уровнях риска, поэтому их нельзя складывать в один общий процент.</p>
+            </div>
+            <div class="evidence-matrix">
+              <div class="matrix-card">
+                <b>Davies &amp; Read 2019</b>
+                <span><em>Оценка:</em> около 56% сообщали о симптомах отмены.</span>
+                <span><em>Как читать:</em> сигнал, что проблему раньше могли недооценивать; данные были очень разнородными.</span>
+              </div>
+              <div class="matrix-card">
+                <b>Henssler 2024</b>
+                <span><em>Оценка:</em> 31% после отмены антидепрессанта и 17% после отмены плацебо.</span>
+                <span><em>Как читать:</em> часть симптомов возникает не только из-за препарата, но и из-за фона, ожиданий и самого процесса наблюдения.</span>
+              </div>
+              <div class="matrix-card">
+                <b>14–15 п.п.</b>
+                <span><em>Оценка:</em> примерная разница между антидепрессантом и плацебо.</span>
+                <span><em>Как читать:</em> возможный специфический вклад препарата сверх фоновых и ноцебо-эффектов.</span>
+              </div>
+              <div class="matrix-card">
+                <b>1 из 35</b>
+                <span><em>Оценка:</em> тяжёлые симптомы отмены.</span>
+                <span><em>Как читать:</em> это не вся отмена, а более узкая категория выраженных симптомов.</span>
+              </div>
+            </div>
+          </div>
+
+          <p>Это заметно ниже оценок Davies &amp; Read, но сравнивать эти цифры напрямую нужно осторожно: работы различались по включённым данным, дизайнам и способу отделения симптомов отмены от рецидива и ноцебо-эффекта.</p>
+
+          <p>Что разумно сказать. Синдром отмены — реальный феномен, и раньше его недооценивали. Но его частота сильно зависит от препарата, длительности приёма, скорости снижения дозы, дизайна исследования и того, как отличают отмену от рецидива. Частые симптомы: головокружение и нарушения равновесия, тошнота, гриппоподобные ощущения, бессонница, тревога или раздражительность, сенсорные феномены вроде кратких ощущений электрических разрядов, которые пациенты часто называют <em>brain zaps</em>.</p>
+
+          <p>Это важно отличать от рецидива депрессии: симптомы отмены чаще начинаются вскоре после снижения дозы и нередко включают необычные телесные или сенсорные проявления; рецидив обычно развивается медленнее и больше похож на <strong>прежний депрессивный эпизод.</strong> Но на практике граница иногда бывает неочевидной.</p>
+
+          <p>И ещё одно различение: синдром отмены — это <strong>не зависимость</strong> в наркологическом смысле: нет эйфоризирующего подкрепления, компульсивного поиска вещества и наращивания дозы ради эффекта. Но физиологическая адаптация и симптомы отмены возможны — поэтому фраза «антидепрессанты не вызывают зависимости» без пояснений может звучать обесценивающе.</p>
+
+          <p>Долгое снижение дозы иногда действительно нужно. Автоматически оставаться на препарате только из-за страха отмены — не лучший план; но и отменять любой ценой не нужно. Решение зависит от риска рецидива, длительности ремиссии, предыдущих эпизодов, переносимости и предпочтений пациента.</p>
+
+          <div class="callout callout-final callout-rose" id="block-8-main">
+            <p class="component-label">Главная рамка</p>
+            <p>Споры вокруг антидепрессантов не сводятся к простому выводу «работают» или «не работают». Они требуют точных формулировок: отделять механизм от эффективности, средний эффект от индивидуального ответа, синдром отмены от зависимости и рецидива.</p>
+          </div>
+        </section>
+      </article>
+
+      <aside class="side-stack" aria-label="Опоры блока 8">
+        <div class="side-panel side-rose">
+          <p class="label">Карта спора</p>
+          <h3 class="side-title">Разные вопросы</h3>
+          <p>Механизм депрессии, эффективность препарата, размер среднего эффекта и синдром отмены требуют разных данных и разных выводов.</p>
+        </div>
+        <div class="side-panel side-lilac">
+          <p class="label">Методология</p>
+          <h3 class="side-title">Дизайн меняет цифры</h3>
+          <p>В спорных темах особенно важны шкалы, длительность наблюдения, источник данных и способ отделить отмену от рецидива или ноцебо-эффекта.</p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section sample-layout" id="block-9" aria-label="Блок 9. О названии">
+      <article class="article-flow">
+        <section class="article-block">
+          <h2>9. О названии</h2>
+
+          <p class="block-lead">Из всего, что мы рассмотрели, складывается одна интересная вещь. <strong>Слово «антидепрессант» — это, скорее, исторически сложившееся клиническое название, а не описание механизма действия.</strong> Оно говорит о том, через какое клиническое применение эти препараты вошли в медицинский язык, но плохо описывает всё, что разные молекулы из этой группы делают сегодня.</p>
+
+          <p>Ипрониазид, имипрамин, флуоксетин и последующие препараты из разных антидепрессивных классов давно работают за пределами депрессии: при тревожных расстройствах, ОКР, ПТСР, хронической боли, мигрени, синдроме раздражённого кишечника. С точки зрения фармакологии это не «молекулы против депрессии», а <strong>препараты, меняющие работу нейромедиаторных систем и рецепторных сетей.</strong></p>
+
+          <p>Поэтому одно и то же вещество может иметь разные клинические применения. Это похоже на ситуацию, где аспирин называли бы только «жаропонижающим»: название не ложное, но оно закрывает другие важные применения.</p>
+
+          <p>В научной литературе и профессиональных инициативах последние годы предлагают не столько одно новое слово вместо «антидепрессант», сколько другую логику классификации. Самый оформленный вариант — нейронаучная номенклатура препаратов (<strong>Neuroscience-based Nomenclature</strong>): она предлагает описывать психотропные препараты через фармакологическую мишень и механизм действия, например как ингибитор обратного захвата серотонина, ингибитор обратного захвата норадреналина и дофамина, агонист мелатониновых рецепторов или антагонист NMDA-рецепторов, а не только через диагноз, при котором препарат исторически применяли.</p>
+
+          <p>Но быстро язык не изменится. На старые названия завязаны инструкции к препаратам, клинические рекомендации, электронные рецепты, страховое покрытие, учебники, фармаконадзор и привычный язык врачей и пациентов. Поэтому в тексте и в кабинете врача слово «антидепрессант» ещё долго будет нормальным рабочим термином — просто его нужно понимать как <strong>неполный ярлык</strong>.</p>
+
+          <p>Что из этого важно практически. Когда врач назначает амитриптилин при мигрени, хронической боли или синдроме раздражённого кишечника, это не значит, что «у вас на самом деле депрессия» или что вы стали жертвой маркетинга. Иногда это официальное показание, иногда — применение <em>off-label</em>, принятое в клинической практике; конкретный набор зависит от страны и инструкции.</p>
+
+          <p>В обоих случаях логика может быть не психиатрической, а нейробиологической: повлиять на боль, сон, висцеральную чувствительность или регуляцию кишечника.</p>
+
+          <div class="callout callout-final callout-warm" id="block-9-main">
+            <p class="component-label">Главная рамка</p>
+            <p>Слово «антидепрессант» не стало ложным, но стало слишком узким. Оно указывает на важное клиническое применение, но не описывает ни механизм, ни весь спектр эффектов.</p>
+          </div>
+        </section>
+      </article>
+
+      <aside class="side-stack" aria-label="Опоры блока 9">
+        <div class="side-panel side-warm">
+          <p class="label">Ярлык</p>
+          <h3 class="side-title">Название как ярлык</h3>
+          <p>«Антидепрессант» говорит об историческом клиническом входе препарата; мишени, эффекты и применения нужно смотреть отдельно.</p>
+        </div>
+        <div class="side-panel side-lilac">
+          <p class="label">Назначение</p>
+          <h3 class="side-title">Смотреть на цель</h3>
+          <p>При боли, мигрени или СРК важны клиническая задача, доза и ожидаемый эффект; бытовая ассоциация с депрессией здесь сбивает.</p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section sample-layout" id="block-10" aria-label="Блок 10. Что важно не путать">
+      <article class="article-flow">
+        <section class="article-block">
+          <h2>10. Что важно не путать</h2>
+
+          <p class="block-lead">После предыдущих блоков это не новая тема, а короткая сборка выводов: те же идеи, но в форме устойчивых путаниц. В разговорах об антидепрессантах они мешают пациентам понимать назначения, а коллегам — отделять обоснованные опасения от необоснованных. Вот пять, которые встречаются чаще всего.</p>
+
+          <h3>Антидепрессанты ≠ <button class="term" type="button" data-note="term-anxiolytics" aria-controls="term-anxiolytics" aria-expanded="false">анксиолитики</button> ≠ <button class="term" type="button" data-note="term-antipsychotics" aria-controls="term-antipsychotics" aria-expanded="false">антипсихотики</button> ≠ <button class="term" type="button" data-note="term-mood-stabilizers" aria-controls="term-mood-stabilizers" aria-expanded="false">нормотимики</button></h3>
+
+          <div class="term-note" id="term-anxiolytics">Анксиолитики — не один химический класс, а зонтичное название для средств с противотревожным действием. Чаще всего в быту так называют бензодиазепины: они быстро усиливают тормозную ГАМК-передачу, но это не единственный способ фармакологически снижать тревогу.</div>
+          <div class="term-note" id="term-antipsychotics">Антипсихотики — неоднородная группа психотропных препаратов. Многие из них влияют на дофаминовую D2-систему, часть — ещё и на серотониновые, гистаминовые, адренергические и другие рецепторы. Поэтому внутри одного названия могут быть разные профили действия и разные клинические задачи.</div>
+          <div class="term-note" id="term-mood-stabilizers">Нормотимики — зонтичное клиническое название для средств, которые помогают стабилизировать течение аффективных эпизодов. Это не один механизм: сюда относят, например, литий, некоторые противосудорожные препараты и часть других психотропных средств.</div>
+
+          <p>Это разные фармакологические и клинические группы, хотя в реальной практике их показания частично пересекаются. <strong>Поэтому название класса не всегда прямо отвечает на вопрос, зачем препарат назначили.</strong></p>
+
+          <p>Антидепрессанты часто назначают при тревожных расстройствах, но это не делает их тем же самым, что быстродействующие анксиолитики. Бензодиазепины — например диазепам, лоразепам, клоназепам — работают иначе и быстрее, через ГАМК-систему. Они могут быть полезны при острой тревоге, но при регулярном длительном приёме повышают риск <button class="term" type="button" data-note="term-tolerance" aria-controls="term-tolerance" aria-expanded="false">толерантности</button>, физической зависимости и синдрома отмены, поэтому обычно используются краткосрочно или строго по показаниям.</p>
+
+          <div class="term-note" id="term-tolerance">Толерантность — ситуация, когда при регулярном приёме прежняя доза действует слабее, и для того же эффекта человеку может требоваться большая доза. Это один из рисков длительного приёма бензодиазепинов.</div>
+
+          <p>Антипсихотики и нормотимики тоже могут появляться в лечении депрессивных состояний не «по названию класса», а по клинической задаче. Некоторые антипсихотики используют как добавление к антидепрессанту при недостаточном ответе; это не значит, что у пациента «психоз». Нормотимики — литий, ламотриджин, вальпроат и другие — прежде всего применяются при биполярном расстройстве, но литий иногда используют и как <button class="term" type="button" data-note="term-augmentation" aria-controls="term-augmentation" aria-expanded="false">аугментацию</button> при резистентной униполярной депрессии.</p>
+
+          <div class="term-note" id="term-augmentation">Аугментация — добавление второго препарата или метода к основному лечению, чтобы усилить эффект, если одного средства оказалось недостаточно.</div>
+
+          <h3>Синдром отмены ≠ зависимость в наркологическом смысле</h3>
+
+          <p>Физическая адаптация и симптомы отмены возможны, но это не аддикция: нет эйфоризирующего подкрепления, компульсивного поиска вещества и употребления ради опьянения или кайфа. Поэтому фразу «антидепрессанты не вызывают зависимости» лучше пояснять: они не вызывают зависимости в наркологическом смысле, но могут приводить к физиологической адаптации и симптомам отмены.</p>
+
+          <h3>Синдром отмены ≠ возврат болезни</h3>
+
+          <p>Часто, но не всегда, синдром отмены начинается в первые дни после снижения дозы или прекращения препарата, а рецидив депрессии развивается медленнее — за недели. Частые симптомы отмены: гриппоподобные ощущения, бессонница, тошнота, головокружение и нарушения равновесия, сенсорные феномены вроде коротких ощущений электрических разрядов, тревожное возбуждение или раздражительность. Но симптомы могут перекрываться, поэтому различать их должен врач, опираясь на сроки, телесные и сенсорные признаки, историю эпизодов и реакцию на временное возвращение дозы или более медленное снижение.</p>
+
+          <h3>Одна молекула ≠ один диагноз</h3>
+
+          <p>Одна молекула может работать и при депрессии, и при боли, но это не обязательно одно и то же клиническое применение. Например, амитриптилин при нейропатической боли часто начинают с низких доз вроде 10–25 мг на ночь, тогда как антидепрессивные дозы обычно выше. Конкретная доза зависит от возраста, переносимости, диагноза, взаимодействий и клинических рекомендаций.</p>
+
+          <h3>«В среднем работает лучше плацебо» ≠ «поможет именно мне»</h3>
+
+          <p>У части пациентов есть выраженный специфический эффект препарата сверх плацебо-ответа; у многих средняя добавочная разница меньше. Поэтому групповые данные не позволяют заранее сказать, окажется ли конкретный человек «тем самым» пациентом с большим ответом. Точно предсказать заранее пока невозможно, хотя врач может повышать шансы рационального выбора: учитывать профиль симптомов, прошлый опыт, сопутствующие состояния, побочные эффекты, взаимодействия и предпочтения пациента.</p>
+
+          <p>И ещё одна важная история для контекста. В 2004 году FDA добавила к антидепрессантам для детей и подростков предупреждение в «чёрной рамке» о повышенном риске суицидальных мыслей и поведения в первые месяцы лечения: по этим данным такие события отмечались примерно у 4% на препарате против 2% на плацебо, завершённых суицидов в этих испытаниях не было. В 2007 году предупреждение расширили на молодых взрослых до 24 лет.</p>
+
+          <p>После этого в некоторых странах снизились назначения антидепрессантов подросткам; отдельные работы связывали это с возможными негативными последствиями на популяционном уровне, но причинная интерпретация остаётся спорной. Это хороший пример того, что риск-коммуникация должна одновременно предупреждать о рисках и не отпугивать от необходимого лечения.</p>
+        </section>
+      </article>
+
+      <aside class="side-stack" aria-label="Опоры блока 10">
+        <div class="side-panel side-rose">
+          <p class="label">Проверка</p>
+          <h3 class="side-title">Сначала задача</h3>
+          <p>Один и тот же класс может появляться в разных планах лечения. Главный вопрос — какая клиническая цель у назначения.</p>
+        </div>
+        <div class="side-panel side-warm">
+          <p class="label">Границы</p>
+          <h3 class="side-title">Похожие слова, разные решения</h3>
+          <p>Отмена, зависимость, рецидив, аугментация и недостаточный ответ часто смешиваются в разговорах; клинические решения для них различаются.</p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section sample-layout" id="block-11" aria-label="Блок 11. Заключение">
+      <article class="article-flow">
+        <section class="article-block">
+          <h2>11. Заключение</h2>
+
+          <p class="block-lead">Антидепрессанты — это не один химический класс, а несколько разных групп молекул, объединённых историей клинического применения, доказательной базой при депрессии и рядом пересекающихся эффектов на нервную систему.</p>
+
+          <p>Дальше выяснилось, что биология депрессии и работа препаратов намного сложнее простой схемы «мало медиатора — добавили медиатор». <strong>У антидепрессантов есть конкретные фармакологические мишени — транспортёры, ферменты, рецепторы, — но клинический эффект разворачивается на уровне систем: эмоциональной обработки, тревоги, сна, боли, нейропластичности и регуляции стресса.</strong> Механизм клинического эффекта спустя 70 лет всё ещё не сводится к одной закрытой формуле.</p>
+
+          <p>Вокруг антидепрессантов остаются живые научные споры. После всех предыдущих блоков особенно хорошо видно несколько зон, где выводы зависят от точных формулировок и новых данных.</p>
+
+          <div class="info-figure" aria-label="Примеры спорных зон вокруг антидепрессантов">
+            <div class="figure-head">
+              <h3 class="figure-title">Где особенно важны точные формулировки</h3>
+              <p class="figure-note">Это не полный список споров, а несколько показательных зон.</p>
+            </div>
+            <div class="evidence-matrix is-three">
+              <div class="matrix-card">
+                <b>Химический дисбаланс</b>
+                <span><em>Что можно сказать:</em> простая версия «депрессия = низкий серотонин» устарела как универсальное объяснение.</span>
+              </div>
+              <div class="matrix-card">
+                <b>Эффект против плацебо</b>
+                <span><em>Что можно сказать:</em> средний эффект статистически значимый, обычно скромный, но у части пациентов выраженный.</span>
+              </div>
+              <div class="matrix-card">
+                <b>Синдром отмены</b>
+                <span><em>Что можно сказать:</em> оценки зависят от методологии, препарата, длительности приёма и способа снижения дозы.</span>
+              </div>
+            </div>
+          </div>
+
+          <p>Эти споры — не повод автоматически отказываться от антидепрессантов и не повод принимать их без вопросов. Это повод <strong>обсуждать с врачом ожидаемую пользу, риски, альтернативы, сроки оценки эффекта и план отмены.</strong></p>
+
+          <div class="callout callout-final callout-warm" id="block-11-main">
+            <p class="component-label">Граница материала</p>
+            <p>Эта брошюра не отвечает на вопрос, принимать ли антидепрессант конкретному человеку и какой именно. Такое решение принимается в разговоре пациента и врача: с учётом анамнеза, сопутствующих состояний, прошлых попыток лечения, личных приоритетов, доступности препаратов и обстоятельств жизни. Никакое общее знание о классе препаратов не заменяет этого разговора. Никакая статистика не предсказывает индивидуальный ответ точно, хотя врач может повысить качество выбора: учесть диагноз, профиль симптомов, сопутствующие состояния, прошлый опыт лечения, взаимодействия, побочные эффекты и предпочтения пациента.</p>
+          </div>
+
+          <p>Полезное общее знание — это не инструкция к самолечению, а рамка для разговора. Понять, чем антидепрессант принципиально отличается от быстродействующего анксиолитика. Знать, что назначение амитриптилина при мигрени — это не «у вас депрессия». Понимать, чем синдром отмены может отличаться от возврата болезни. Не паниковать от заголовка «антидепрессанты опровергнуты». Не обижаться на себя, если препарат не сработал — это не «вы неправильно старались», а нормальная часть неравномерного распределения ответов в популяции.</p>
+
+          <p>Остаётся открытый вопрос, на который пока нет ответа у самого исследовательского поля: чем следующая волна — кетаминовые препараты, психоделические терапии, индивидуальные биомаркеры, цифровой мониторинг — дополнит или изменит сегодняшнюю фармакотерапию. Вероятно, через 20 лет разговор об антидепрессантах будет звучать иначе: меньше как разговор об одном «классе от депрессии» и больше как обсуждение разных инструментов для разных траекторий депрессивных, тревожных, болевых и связанных со стрессом состояний.</p>
+        </section>
+      </article>
+
+      <aside class="side-stack" aria-label="Опоры блока 11">
+        <div class="side-panel side-rose">
+          <p class="label">Итог</p>
+          <h3 class="side-title">Системный эффект</h3>
+          <p>Фармакологические мишени конкретны, но клинический результат разворачивается на уровне сетей: эмоций, тревоги, сна, боли и стресса.</p>
+        </div>
+        <div class="side-panel side-lilac">
+          <p class="label">Граница</p>
+          <h3 class="side-title">Рамка для разговора</h3>
+          <p>Общее знание помогает задавать точные вопросы врачу; выбор препарата, сроки, риски и отмена остаются индивидуальными.</p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section" id="sources" aria-labelledby="sources-title">
+      <div class="section-head">
+        <div>
+          <p class="label">Доказательная база</p>
+          <h2 id="sources-title">Литература и документы</h2>
+        </div>
+        <p>Ниже собраны источники, на которые опирается текст: клинические рекомендации, регуляторные документы, систематические обзоры, мета-анализы и ключевые статьи.</p>
+      </div>
+
+      <details class="sources-box">
+        <summary>Показать список</summary>
+        <div class="sources-content">
+          <section class="source-group">
+            <h3>Нормативные документы и клинические рекомендации</h3>
+            <ul class="source-list">
+              <li><strong>American Psychiatric Association. (2022).</strong> <em>DSM-5-TR: Diagnostic and Statistical Manual of Mental Disorders, Text Revision.</em></li>
+              <li><strong>World Health Organization. (2023).</strong> <em>mhGAP Intervention Guide, version 3.0.</em> <a href="https://www.who.int/publications/i/item/9789240084278">WHO</a>.</li>
+              <li><strong>World Health Organization.</strong> <em>ICD-11.</em> <a href="https://icd.who.int/browse11/l-m/en">WHO ICD-11</a>.</li>
+              <li><strong>NICE. (2022, reviewed 2026).</strong> <em>Depression in adults: treatment and management (NG222).</em> <a href="https://www.nice.org.uk/guidance/ng222">NICE NG222</a>.</li>
+              <li><strong>NICE. (2018, updated).</strong> <em>Post-traumatic stress disorder (NG116).</em> <a href="https://www.nice.org.uk/guidance/ng116">NICE NG116</a>.</li>
+              <li><strong>NICE. (2011, updated).</strong> <em>Generalised anxiety disorder and panic disorder in adults (CG113).</em> <a href="https://www.nice.org.uk/guidance/cg113">NICE CG113</a>.</li>
+              <li><strong>NICE. (2005, updated).</strong> <em>Obsessive-compulsive disorder and body dysmorphic disorder (CG31).</em> <a href="https://www.nice.org.uk/guidance/cg31">NICE CG31</a>.</li>
+              <li><strong>American Psychological Association. (2019).</strong> <em>Clinical Practice Guideline for the Treatment of Depression.</em> <a href="https://www.apa.org/depression-guideline">APA</a>.</li>
+              <li><strong>Kennedy et al. (2016).</strong> Canadian Network for Mood and Anxiety Treatments (CANMAT) 2016 Clinical Guidelines for the Management of Adults with Major Depressive Disorder: Section 3. Pharmacological Treatments. <em>Canadian Journal of Psychiatry.</em> DOI: 10.1177/0706743716659417. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/27486148/">27486148</a>.</li>
+              <li><strong>Bauer et al. (2013).</strong> World Federation of Societies of Biological Psychiatry (WFSBP) guidelines for biological treatment of unipolar depressive disorders, part 1. <em>World Journal of Biological Psychiatry.</em> DOI: 10.3109/15622975.2013.804195. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/23879318/">23879318</a>.</li>
+              <li><strong>VA/DoD. (2023).</strong> <em>Clinical Practice Guideline for the Management of Posttraumatic Stress Disorder and Acute Stress Disorder.</em> <a href="https://www.healthquality.va.gov/HEALTHQUALITY/guidelines/MH/ptsd/index.asp">VA/DoD</a>.</li>
+              <li><strong>Finnerup et al. (2015).</strong> Pharmacotherapy for neuropathic pain in adults: a systematic review and meta-analysis. <em>Lancet Neurology.</em> DOI: 10.1016/S1474-4422(14)70251-0. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/25575710/">25575710</a>.</li>
+              <li><strong>Macfarlane et al. (2017).</strong> EULAR revised recommendations for the management of fibromyalgia. <em>Annals of the Rheumatic Diseases.</em> DOI: 10.1136/annrheumdis-2016-209724. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/27377815/">27377815</a>.</li>
+              <li><strong>Lacy et al. (2021).</strong> ACG Clinical Guideline: Management of Irritable Bowel Syndrome. <em>American Journal of Gastroenterology.</em> DOI: 10.14309/ajg.0000000000001036. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/33315591/">33315591</a>.</li>
+              <li><strong>Silberstein et al. (2012).</strong> Evidence-based guideline update: pharmacologic treatment for episodic migraine prevention in adults. <em>Neurology.</em> DOI: 10.1212/WNL.0b013e3182535d20. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/22529202/">22529202</a>.</li>
+              <li><strong>FDA. (2025).</strong> <em>Spravato (esketamine) prescribing information.</em> <a href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/211243s019lbl.pdf">FDA label</a>.</li>
+              <li><strong>FDA. (2026).</strong> <em>Auvelity prescribing information.</em> <a href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/215430s009s018lbl.pdf">FDA label</a>.</li>
+            </ul>
+          </section>
+
+          <section class="source-group">
+            <h3>Эффективность, плацебо и доза</h3>
+            <ul class="source-list">
+              <li><strong>Cipriani et al. (2018).</strong> Comparative efficacy and acceptability of 21 antidepressant drugs for the acute treatment of adults with major depressive disorder: a systematic review and network meta-analysis. <em>The Lancet.</em> DOI: 10.1016/S0140-6736(17)32802-7. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/29477251/">29477251</a>.</li>
+              <li><strong>Munkholm, Paludan-Muller &amp; Boesen. (2019).</strong> Considering the methodological limitations in the evidence base of antidepressants for depression: a reanalysis of a network meta-analysis. <em>BMJ Open.</em> DOI: 10.1136/bmjopen-2018-024886. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/31248914/">31248914</a>.</li>
+              <li><strong>Kirsch et al. (2008).</strong> Initial severity and antidepressant benefits: a meta-analysis of data submitted to the Food and Drug Administration. <em>PLOS Medicine.</em> DOI: 10.1371/journal.pmed.0050045. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/18303940/">18303940</a>.</li>
+              <li><strong>Stone et al. (2022).</strong> Response to acute monotherapy for major depressive disorder in randomized, placebo controlled trials submitted to the US Food and Drug Administration: individual participant data analysis. <em>BMJ.</em> DOI: 10.1136/bmj-2021-067606. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/35918097/">35918097</a>.</li>
+              <li><strong>Furukawa et al. (2019).</strong> Optimal dose of selective serotonin reuptake inhibitors, venlafaxine, and mirtazapine in major depression: a systematic review and dose-response meta-analysis. <em>Lancet Psychiatry.</em> DOI: 10.1016/S2215-0366(19)30217-2. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/31178367/">31178367</a>.</li>
+              <li><strong>Hieronymus et al. (2016).</strong> A mega-analysis of fixed-dose trials reveals dose-dependency and a rapid onset of action for the antidepressant effect of three selective serotonin reuptake inhibitors. <em>Translational Psychiatry.</em> DOI: 10.1038/tp.2016.104. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/27271860/">27271860</a>.</li>
+            </ul>
+          </section>
+
+          <section class="source-group">
+            <h3>Серотониновая теория и механизмы действия</h3>
+            <ul class="source-list">
+              <li><strong>Moncrieff et al. (2022/2023).</strong> The serotonin theory of depression: a systematic umbrella review of the evidence. <em>Molecular Psychiatry.</em> DOI: 10.1038/s41380-022-01661-0. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/35854107/">35854107</a>.</li>
+              <li><strong>Jauhar et al. (2023).</strong> A leaky umbrella has little value: evidence clearly indicates the serotonin system is implicated in depression. <em>Molecular Psychiatry.</em> DOI: 10.1038/s41380-023-02095-y. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/37322065/">37322065</a>.</li>
+              <li><strong>Jauhar, Cowen &amp; Browning. (2023).</strong> Fifty years on: serotonin and depression. <em>Journal of Psychopharmacology.</em> DOI: 10.1177/02698811231161813. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/36938996/">36938996</a>.</li>
+              <li><strong>Harmer, Duman &amp; Cowen. (2017).</strong> How do antidepressants work? New perspectives for refining future treatment approaches. <em>Lancet Psychiatry.</em> DOI: 10.1016/S2215-0366(17)30015-9. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/28153641/">28153641</a>.</li>
+              <li><strong>Taylor et al. (2006).</strong> Early onset of selective serotonin reuptake inhibitor antidepressant action: systematic review and meta-analysis. <em>Archives of General Psychiatry.</em> DOI: 10.1001/archpsyc.63.11.1217. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/17088502/">17088502</a>.</li>
+              <li><strong>Commons &amp; Linnros. (2019).</strong> Delayed Antidepressant Efficacy and the Desensitization Hypothesis. <em>ACS Chemical Neuroscience.</em> DOI: 10.1021/acschemneuro.8b00698. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/30807103/">30807103</a>.</li>
+              <li><strong>Molendijk et al. (2014).</strong> Serum BDNF concentrations as peripheral manifestations of depression: evidence from a systematic review and meta-analyses. <em>Molecular Psychiatry.</em> DOI: 10.1038/mp.2013.105. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/23958957/">23958957</a>.</li>
+              <li><strong>Duman &amp; Aghajanian. (2012).</strong> Synaptic dysfunction in depression: potential therapeutic targets. <em>Science.</em> DOI: 10.1126/science.1222939. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/23042884/">23042884</a>.</li>
+              <li><strong>Castren &amp; Monteggia. (2021).</strong> Brain-Derived Neurotrophic Factor Signaling in Depression and Antidepressant Action. <em>Biological Psychiatry.</em> DOI: 10.1016/j.biopsych.2021.05.008. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/34053675/">34053675</a>.</li>
+              <li><strong>Casarotto et al. (2021).</strong> Antidepressant drugs act by directly binding to TRKB neurotrophin receptors. <em>Cell.</em> DOI: 10.1016/j.cell.2021.01.034. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/33606976/">33606976</a>.</li>
+              <li><strong>Harmer et al. (2009).</strong> Effect of acute antidepressant administration on negative affective bias in depressed patients. <em>American Journal of Psychiatry.</em> DOI: 10.1176/appi.ajp.2009.09020149. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/19755572/">19755572</a>.</li>
+              <li><strong>Harmer, Goodwin &amp; Cowen. (2009).</strong> Why do antidepressants take so long to work? A cognitive neuropsychological model of antidepressant drug action. <em>British Journal of Psychiatry.</em> DOI: 10.1192/bjp.bp.108.051193. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/19648538/">19648538</a>.</li>
+              <li><strong>Godlewska et al. (2016).</strong> Early changes in emotional processing as a marker of clinical response to SSRI treatment in depression. <em>Translational Psychiatry.</em> DOI: 10.1038/tp.2016.130. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/27874847/">27874847</a>.</li>
+              <li><strong>Pringle et al. (2013).</strong> Antidepressant treatment and emotional processing: can we dissociate the roles of serotonin and noradrenaline? <em>Journal of Psychopharmacology.</em> DOI: 10.1177/0269881112474523. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/23392757/">23392757</a>.</li>
+            </ul>
+          </section>
+
+          <section class="source-group">
+            <h3>Синдром отмены и прекращение лечения</h3>
+            <ul class="source-list">
+              <li><strong>Davies &amp; Read. (2019).</strong> A systematic review into the incidence, severity and duration of antidepressant withdrawal effects: are guidelines evidence-based? <em>Addictive Behaviors.</em> DOI: 10.1016/j.addbeh.2018.08.027. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/30292574/">30292574</a>.</li>
+              <li><strong>Jauhar &amp; Hayes. (2019).</strong> The war on antidepressants: what we can, and can't conclude, from the systematic review of antidepressant withdrawal effects by Davies and Read. <em>Addictive Behaviors.</em> DOI: 10.1016/j.addbeh.2019.01.025. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/30732861/">30732861</a>.</li>
+              <li><strong>Horowitz &amp; Taylor. (2019).</strong> Tapering of SSRI treatment to mitigate withdrawal symptoms. <em>Lancet Psychiatry.</em> DOI: 10.1016/S2215-0366(19)30032-X. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/30850328/">30850328</a>.</li>
+              <li><strong>Horowitz et al. (2022).</strong> Distinguishing antidepressant withdrawal from relapse. <em>BJPsych Advances.</em> DOI: 10.1192/bja.2021.62.</li>
+              <li><strong>Henssler et al. (2024).</strong> Incidence of antidepressant discontinuation symptoms: a systematic review and meta-analysis. <em>Lancet Psychiatry.</em> DOI: 10.1016/S2215-0366(24)00133-0. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/38851198/">38851198</a>.</li>
+              <li><strong>Kalfas et al. (2025).</strong> Incidence and Nature of Antidepressant Discontinuation Symptoms: A Systematic Review and Meta-Analysis. <em>JAMA Psychiatry.</em> DOI: 10.1001/jamapsychiatry.2025.1362. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/40632531/">40632531</a>.</li>
+            </ul>
+          </section>
+
+          <section class="source-group">
+            <h3>История и номенклатура</h3>
+            <ul class="source-list">
+              <li><strong>Kuhn. (1958).</strong> The treatment of depressive states with G 22355 (imipramine hydrochloride). <em>American Journal of Psychiatry.</em> DOI: 10.1176/ajp.115.5.459. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/13583250/">13583250</a>.</li>
+              <li><strong>Schildkraut. (1965).</strong> The catecholamine hypothesis of affective disorders: a review of supporting evidence. <em>American Journal of Psychiatry.</em> DOI: 10.1176/ajp.122.5.509. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/5319766/">5319766</a>.</li>
+              <li><strong>Coppen. (1967).</strong> The biochemistry of affective disorders. <em>British Journal of Psychiatry.</em> DOI: 10.1192/bjp.113.504.1237. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/4169954/">4169954</a>.</li>
+              <li><strong>Hillhouse &amp; Porter. (2015).</strong> A brief history of the development of antidepressant drugs: from monoamines to glutamate. <em>Experimental and Clinical Psychopharmacology.</em> DOI: 10.1037/a0038550. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/25643025/">25643025</a>.</li>
+              <li><strong>Zohar et al. (2015).</strong> Neuroscience-based nomenclature: a call for action. <em>European Neuropsychopharmacology.</em> DOI: 10.1016/j.euroneuro.2015.08.019.</li>
+              <li><strong>Zohar &amp; Kasper. (2016).</strong> Neuroscience-based Nomenclature (NbN): a call for action. <em>World Journal of Biological Psychiatry.</em> DOI: 10.1080/15622975.2016.1193626. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/27379490/">27379490</a>.</li>
+              <li><strong>NbN / ECNP.</strong> Neuroscience-based Nomenclature official materials. <a href="https://www.nbn.science/">nbn.science</a>.</li>
+            </ul>
+          </section>
+
+          <section class="source-group">
+            <h3>Терапевтически резистентная депрессия и новые варианты лечения</h3>
+            <ul class="source-list">
+              <li><strong>Rush et al. (2004).</strong> Sequenced Treatment Alternatives to Relieve Depression (STAR*D): rationale and design. <em>Controlled Clinical Trials.</em> DOI: 10.1016/S0197-2456(03)00112-0. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/15061154/">15061154</a>.</li>
+              <li><strong>Rush et al. (2006).</strong> Acute and longer-term outcomes in depressed outpatients requiring one or several treatment steps: a STAR*D report. <em>American Journal of Psychiatry.</em> DOI: 10.1176/ajp.2006.163.11.1905. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/17074942/">17074942</a>.</li>
+              <li><strong>Pigott et al. (2023).</strong> What are the treatment remission, response and extent of improvement rates after up to four trials of antidepressant therapies in real-world depressed patients? <em>BMJ Open.</em> DOI: 10.1136/bmjopen-2022-063095. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/37491091/">37491091</a>.</li>
+              <li><strong>Rush et al. (2023).</strong> The STAR*D Data Remain Strong: Reply to Pigott et al. <em>American Journal of Psychiatry.</em> DOI: 10.1176/appi.ajp.20230869. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/38037409/">38037409</a>.</li>
+              <li><strong>McIntyre et al. (2023).</strong> Treatment-resistant depression: definition, prevalence, detection, management, and investigational interventions. <em>World Psychiatry.</em> DOI: 10.1002/wps.21120. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/37713549/">37713549</a>.</li>
+              <li><strong>Lam et al. (2024).</strong> Canadian Network for Mood and Anxiety Treatments (CANMAT) 2023 Update on Clinical Guidelines for Management of Major Depressive Disorder in Adults. <em>Canadian Journal of Psychiatry.</em> DOI: 10.1177/07067437241245384. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/38711351/">38711351</a>.</li>
+              <li><strong>Popova et al. (2019).</strong> Efficacy and safety of flexibly dosed esketamine nasal spray combined with a newly initiated oral antidepressant in treatment-resistant depression. <em>American Journal of Psychiatry.</em> DOI: 10.1176/appi.ajp.2019.19020172. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/31109201/">31109201</a>.</li>
+              <li><strong>FDA. (2026-04-24).</strong> FDA accelerates action on treatments for serious mental illness following executive order. <a href="https://www.fda.gov/news-events/press-announcements/fda-accelerates-action-treatments-serious-mental-illness-following-executive-order">FDA press announcement</a>.</li>
+            </ul>
+          </section>
+
+          <section class="source-group">
+            <h3>Боль, СРК, мигрень и ПТСР</h3>
+            <ul class="source-list">
+              <li><strong>Lunn et al. (2014).</strong> Duloxetine for treating painful neuropathy, chronic pain or fibromyalgia. <em>Cochrane Database of Systematic Reviews.</em> DOI: 10.1002/14651858.CD007115.pub3. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/24385423/">24385423</a>.</li>
+              <li><strong>Moore et al. (2019).</strong> Amitriptyline for fibromyalgia in adults. <em>Cochrane Database of Systematic Reviews.</em> DOI: 10.1002/14651858.CD011824. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/35658166/">35658166</a>.</li>
+              <li><strong>Ford et al. (2023).</strong> Amitriptyline at low-dose and titrated for irritable bowel syndrome as second-line treatment in primary care (ATLANTIS). <em>The Lancet.</em> DOI: 10.1016/S0140-6736(23)01523-4. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/37858323/">37858323</a>.</li>
+              <li><strong>Ford et al. (2019).</strong> Effect of antidepressants and psychological therapies in irritable bowel syndrome: an updated systematic review and meta-analysis. <em>American Journal of Gastroenterology.</em> DOI: 10.1038/s41395-018-0222-5. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/30177784/">30177784</a>.</li>
+              <li><strong>Hoskins et al. (2015).</strong> Pharmacotherapy for post-traumatic stress disorder: systematic review and meta-analysis. <em>British Journal of Psychiatry.</em> DOI: 10.1192/bjp.bp.114.148551. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/25644881/">25644881</a>.</li>
+              <li><strong>Hoskins et al. (2021).</strong> Pharmacological therapy for post-traumatic stress disorder: a systematic review and meta-analysis of monotherapy, augmentation and head-to-head approaches. <em>European Journal of Psychotraumatology.</em> DOI: 10.1080/20008198.2020.1802920. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/34992738/">34992738</a>.</li>
+              <li><strong>Williams et al. (2022).</strong> Pharmacotherapy for post traumatic stress disorder (PTSD). <em>Cochrane Database of Systematic Reviews.</em> DOI: 10.1002/14651858.CD002795.pub3. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/35234292/">35234292</a>.</li>
+            </ul>
+          </section>
+
+          <section class="source-group">
+            <h3>Педиатрия и риск-коммуникация</h3>
+            <ul class="source-list">
+              <li><strong>Hammad et al. (2006).</strong> Suicidality in pediatric patients treated with antidepressant drugs. <em>Archives of General Psychiatry.</em> DOI: 10.1001/archpsyc.63.3.332. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/16520440/">16520440</a>.</li>
+              <li><strong>Gibbons et al. (2007).</strong> Early evidence on the effects of regulators' suicidality warnings on SSRI prescriptions and suicide in children and adolescents. <em>American Journal of Psychiatry.</em> DOI: 10.1176/appi.ajp.2007.07030454. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/17728420/">17728420</a>.</li>
+              <li><strong>Gibbons et al. (2006).</strong> The relationship between antidepressant prescription rates and rate of early adolescent suicide. <em>American Journal of Psychiatry.</em> DOI: 10.1176/ajp.2006.163.11.1898. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/17074941/">17074941</a>.</li>
+              <li><strong>Fornaro et al. (2019).</strong> The FDA "Black Box" Warning on antidepressant suicide risk in young adults: more harm than benefits? <em>Frontiers in Psychiatry.</em> DOI: 10.3389/fpsyt.2019.00294. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/31130881/">31130881</a>.</li>
+              <li><strong>March et al. (2004).</strong> Fluoxetine, cognitive-behavioral therapy, and their combination for adolescents with depression: Treatment for Adolescents With Depression Study (TADS). <em>JAMA.</em> DOI: 10.1001/jama.292.7.807. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/15315995/">15315995</a>.</li>
+              <li><strong>Friedman. (2014).</strong> Antidepressants' black-box warning: 10 years later. <em>New England Journal of Medicine.</em> DOI: 10.1056/NEJMp1408480. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/25354101/">25354101</a>.</li>
+            </ul>
+          </section>
+
+          <section class="source-group">
+            <h3>Для углубления</h3>
+            <ul class="source-list">
+              <li><strong>Stahl's Essential Psychopharmacology</strong> (текущее издание). Учебник для углубления в механизмы; не первичный источник.</li>
+              <li><strong>Maudsley Prescribing Guidelines in Psychiatry</strong> (текущее издание). Практический справочник; не заменяет клинические рекомендации и первичные исследования.</li>
+              <li><strong>Goodman &amp; Gilman's Pharmacological Basis of Therapeutics</strong> (текущее издание). Фармакологическая база по классам препаратов.</li>
+              <li><strong>Robert Sapolsky.</strong> Stanford lecture on depression. Контекст по биологической рамке депрессии; не первичный источник по фармакотерапии.</li>
+              <li><strong>Carlat Report / психофармакологические клинические подкасты.</strong> Клинический контекст; не замена клиническим рекомендациям и рецензируемым исследованиям.</li>
+            </ul>
+          </section>
+        </div>
+      </details>
+    </section>
+
+    <section class="section footer-band" aria-label="Об авторе и материале">
+      <div>
+        <p class="label">Об авторе</p>
+        <h2>Ксения Кузина</h2>
+        <div class="author-note">
+          <p>Психолог и научная просветительница. Работаю в доказательных подходах. Пишу о биологии поведения, нейробиологии эмоций и стресса, эволюции и критическом мышлении. Этот лонгрид — образовательный материал, он не заменяет консультации.</p>
+          <div class="footer-actions" aria-label="Ссылки автора">
+            <a href="https://kskuzina.github.io/about.html" target="_blank">Обо мне</a>
+            <a href="https://www.instagram.com/rhizome.bio/" target="_blank">Мой проект</a>
+            <a href="https://www.instagram.com/kskuzina/" target="_blank">Instagram</a>
+          </div>
+        </div>
+      </div>
+      <img class="author-portrait" src="assets/ksenia_portrait.jpg" alt="Портрет Ксении Кузиной" loading="lazy" decoding="async">
+    </section>
+  </main>
+
+  <script>
+    document.querySelectorAll('.term').forEach((term) => {
+      term.addEventListener('click', () => {
+        const note = document.getElementById(term.dataset.note);
+        if (!note) return;
+
+        const shouldOpen = !note.classList.contains('open');
+
+        document.querySelectorAll('.term-note.open').forEach((openNote) => {
+          openNote.classList.remove('open');
+        });
+
+        document.querySelectorAll('.term[aria-expanded="true"]').forEach((openTerm) => {
+          openTerm.setAttribute('aria-expanded', 'false');
+        });
+
+        if (shouldOpen) {
+          note.classList.add('open');
+          term.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
