@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Блог — kskuzina</title>
+  <title>Материалы — kskuzina</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -28,7 +28,7 @@
       <a href="help.html">С чем могу помочь</a>
       <a href="how-it-works.html">Как это устроено</a>
       <a href="education.html">Образование</a>
-      <a href="materials.html" class="active">Блог</a>
+      <a href="materials.html" class="active">Материалы</a>
       <a href="https://t.me/kskuzina" target="_blank" class="btn btn-dark nav-cta">Написать</a>
     </div>
     <button class="burger" onclick="toggleMenu()" aria-label="Меню">
@@ -41,7 +41,7 @@
     <a href="help.html">С чем могу помочь</a>
     <a href="how-it-works.html">Как это устроено</a>
     <a href="education.html">Образование</a>
-    <a href="materials.html" class="active">Блог</a>
+    <a href="materials.html" class="active">Материалы</a>
     <a href="https://t.me/kskuzina" target="_blank" class="nav-cta">Написать в Telegram</a>
   </div>
 
@@ -50,66 +50,93 @@
 
       <div class="page-hero">
         <div class="section-label">Контент</div>
-        <h1>Блог</h1>
+        <h1>Материалы</h1>
         <p class="lead" style="margin-top: 16px;">
-          Статьи, видео и другие профессиональные материалы.
+          Каталог образовательных материалов: статьи и лонгриды, лекции и видео,
+          опросники, раздаточные материалы и полезные ресурсы.
         </p>
       </div>
 
-      <div class="materials-grid">
-
-        <!-- Articles -->
-        <div class="material-card glass-lg" style="grid-column: 1 / -1;">
-          <div class="badge">Статьи</div>
-          <h3>Антидепрессанты: что это за класс препаратов и как они работают</h3>
-          <p style="color: var(--muted); font-size: 0.9rem; line-height: 1.7;">
-            Образовательный лонгрид о том, какие бывают антидепрессанты, как они предположительно
-            работают в нервной системе, почему применяются шире депрессии и где их эффект ограничен.
-            С опорой на клинические рекомендации и исследования. Можно читать на странице или скачать PDF.
-          </p>
-          <a href="antidepressants.html" class="btn btn-outline" style="align-self: flex-start; margin-top: 8px;">
-            Читать →
-          </a>
+      <!-- Авторские проекты -->
+      <section style="margin-top: 8px;">
+        <div class="section-label">Авторские проекты</div>
+        <div class="materials-grid" style="margin-top: 20px;">
+          <div class="material-card glass-lg">
+            <div class="badge">Авторский проект</div>
+            <h3>RHIZOME | Природа человека</h3>
+            <p style="color: var(--muted); font-size: 0.9rem; line-height: 1.7;">
+              Авторский образовательный проект о природе человека, психологии и биологии поведения.
+            </p>
+            <a href="https://www.instagram.com/rhizome.bio/" target="_blank" class="btn btn-outline" style="align-self: flex-start; margin-top: 8px;">
+              Перейти →
+            </a>
+          </div>
         </div>
+      </section>
 
-        <!-- YouTube -->
-        <div class="material-card glass-lg">
-          <div class="badge">Видео</div>
-          <h3>Лекции на YouTube</h3>
-          <p style="color: var(--muted); font-size: 0.9rem; line-height: 1.7;">
-            Профессиональные видео для специалистов. Пока вышла одна лекция — о травме.
-          </p>
-          <a href="https://www.youtube.com/@kskuzina" target="_blank" class="btn btn-outline" style="align-self: flex-start; margin-top: 8px;">
-            YouTube →
-          </a>
+      <!-- Статьи и лонгриды -->
+      <section style="margin-top: 40px;">
+        <div class="section-label">Статьи и лонгриды</div>
+        <div class="materials-grid" style="margin-top: 20px;">
+          <div class="material-card glass-lg" style="grid-column: 1 / -1;">
+            <div class="badge">Лонгрид</div>
+            <h3>Антидепрессанты: что это за класс препаратов и как они работают</h3>
+            <p style="color: var(--muted); font-size: 0.9rem; line-height: 1.7;">
+              Образовательный лонгрид о том, какие бывают антидепрессанты, как они предположительно
+              работают в нервной системе, почему применяются шире депрессии и где их эффект ограничен.
+              С опорой на клинические рекомендации и исследования. Можно читать на странице или скачать PDF.
+            </p>
+            <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px;">
+              <a href="antidepressants.html" class="btn btn-outline" style="align-self: flex-start;">
+                Читать →
+              </a>
+              <a href="antidepressants.pdf" class="btn btn-outline" style="align-self: flex-start;">
+                Скачать PDF
+              </a>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <!-- Instagram nature -->
-        <div class="material-card glass-lg">
-          <div class="badge">Instagram</div>
-          <h3>RHIZOME | Природа человека</h3>
-          <p style="color: var(--muted); font-size: 0.9rem; line-height: 1.7;">
-            Лаборатория человеческой сложности. Биология поведения, психология, эволюция. Не распутываем хаос — исследуем связи.
-          </p>
-          <a href="https://www.instagram.com/rhizome.bio/" target="_blank" class="btn btn-outline" style="align-self: flex-start; margin-top: 8px;">
-            Перейти →
-          </a>
+      <!-- Лекции и видео -->
+      <section style="margin-top: 40px;">
+        <div class="section-label">Лекции и видео</div>
+        <div class="materials-grid" style="margin-top: 20px;">
+          <div class="material-card glass-lg" style="grid-column: 1 / -1;">
+            <div class="badge">Видео</div>
+            <h3>Лекции на YouTube</h3>
+            <p style="color: var(--muted); font-size: 0.9rem; line-height: 1.7;">
+              Профессиональные видео для специалистов. Пока вышла одна лекция — о травме.
+            </p>
+            <a href="https://www.youtube.com/@kskuzina" target="_blank" class="btn btn-outline" style="align-self: flex-start; margin-top: 8px;">
+              YouTube →
+            </a>
+          </div>
         </div>
+      </section>
 
-        <!-- Useful resources link -->
-        <div class="material-card glass-lg" style="grid-column: 1 / -1;">
-          <div class="badge">Ресурсы</div>
-          <h3>Полезные ресурсы для клиентов и коллег</h3>
-          <p style="color: var(--muted); font-size: 0.9rem; line-height: 1.7;">
-            Подборка ссылок: доказательная медицина, центры помощи, списки специалистов,
-            проекты по психологической поддержке.
-          </p>
-          <a href="resources.html" class="btn btn-outline" style="align-self: flex-start; margin-top: 8px;">
-            Смотреть ресурсы →
-          </a>
+      <!-- Полезные ресурсы -->
+      <section style="margin-top: 40px; margin-bottom: 8px;">
+        <div class="section-label">Полезные ресурсы</div>
+        <div class="materials-grid" style="margin-top: 20px;">
+          <div class="material-card glass-lg">
+            <div class="badge">Ресурсы</div>
+            <h3>Полезные ресурсы для клиентов и коллег</h3>
+            <p style="color: var(--muted); font-size: 0.9rem; line-height: 1.7;">
+              Подборка ссылок: доказательная медицина, центры помощи, списки специалистов,
+              проекты по психологической поддержке.
+            </p>
+            <a href="resources.html" class="btn btn-outline" style="align-self: flex-start; margin-top: 8px;">
+              Смотреть ресурсы →
+            </a>
+          </div>
         </div>
+      </section>
 
-      </div>
+      <!-- Готовится -->
+      <section style="margin-top: 40px; text-align: center;">
+        <p style="color: var(--muted); font-size: 0.95rem;">Готовятся новые материалы: онлайн-опросники и раздаточные материалы.</p>
+      </section>
 
     </div>
   </main>
@@ -125,7 +152,7 @@
         <a href="help.html">С чем могу помочь</a>
         <a href="how-it-works.html">Как это устроено</a>
         <a href="education.html">Образование</a>
-        <a href="materials.html">Блог</a>
+        <a href="materials.html">Материалы</a>
       </div>
       <div class="footer-links">
         <a href="consent.html">Информированное согласие</a>
